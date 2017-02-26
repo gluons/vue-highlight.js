@@ -1,0 +1,9 @@
+{
+	"parserOptions": {
+		"sourceType": "module"
+	},
+	"extends": "gluons",
+	"plugins": [
+		"vue"
+	]
+}
