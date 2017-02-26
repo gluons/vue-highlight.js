@@ -2,7 +2,7 @@
   "name": "vue-highlight.js",
   "version": "1.0.0",
   "description": "Highlight.js syntax highlighter component for Vue.",
-  "main": "index.js",
+  "main": "./dist/vue-highlight.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.config.js --open --hot --inline",
     "build": "rimraf ./dist && cross-env NODE_ENV=production webpack --config ./build/webpack.prod.config.js",
