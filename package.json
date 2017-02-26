@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.config.js --open --hot --inline",
     "build": "rimraf ./dist && cross-env NODE_ENV=production webpack --config ./build/webpack.prod.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,9 @@
     "eslint": "^3.16.1",
     "eslint-config-gluons": "^1.0.4",
     "eslint-plugin-vue": "^2.0.1",
+    "jasmine": "^2.5.3",
+    "jasmine-expect": "^3.6.0",
+    "jasmine-spec-reporter": "^3.2.0",
     "rimraf": "^2.6.1",
     "style-loader": "^0.13.2",
     "vue": "^2.2.0",
