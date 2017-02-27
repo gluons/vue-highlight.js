@@ -1,0 +1,11 @@
+{
+	"root": true,
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"sourceType": "module"
+	},
+	"extends": "gluons",
+	"plugins": [
+		"vue"
+	]
+}
