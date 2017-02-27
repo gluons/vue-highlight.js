@@ -1,3 +1,81 @@
+@import './colors.scss';
+@import './mixins.scss';
+
 body {
+	background-color: $bg-color;
 	font-family: 'Libre Baskerville', serif;
+	font-size: 16px;
+	padding: 1em 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+	}
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+::selection {
+	@include selection;
+}
+
+::-moz-selection {
+	@include selection;
+}
+
+.hljs {
+	font-family: 'Fira Mono', monospace;
+	font-size: .9em;
+
+	&::selection, ::selection {
+		@include code-selection;
+	}
+	&::-moz-selection, ::-moz-selection {
+		@include code-selection;
+	}
+}
+
+/*
+ * Credit: CSS Tricks
+ * https://css-tricks.com/examples/hrs/
+ */
+hr {
+	&.divider {
+		padding: 0;
+		border: none;
+		border-top: medium double #333;
+		color: #333;
+		text-align: center;
+		max-height: 0;
+		margin: 2em 0;
+
+		&::after {
+			content: '§';
+			display: inline-block;
+			position: relative;
+			top: -0.7em;
+			font-size: 1.5em;
+			padding: 0 0.25em;
+			background-color: $bg-color;
+		}
+	}
+	&.gap {
+		border: 0 none transparent;
+		clear: both;
+		height: 1px;
+		margin: 2em 0;
+
+		&.dash {
+			border-bottom: 1px dashed #ccc;
+			background: #999;
+		}
+	}
 }

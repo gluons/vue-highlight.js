@@ -1,0 +1,10 @@
+@import './colors.scss';
+
+@mixin selection {
+	background-color: $selection-bg-color;
+}
+
+@mixin code-selection {
+	color: $code-selection-color;
+	background-color: $code-selection-bg-color !important;
+}

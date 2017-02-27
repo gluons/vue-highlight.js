@@ -9,7 +9,7 @@ import * as components from './components';
 Vue.config.productionTip = false;
 
 // Styles
-import 'highlight.js/styles/agate.css';
+import 'highlight.js/styles/monokai.css';
 import './scss/main.scss';
 
 // Plugins

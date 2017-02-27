@@ -1,12 +1,37 @@
 <template lang="pug">
 #home
-	h1 Vue Highlight.js
-	p 📜 Highlight.js syntax highlighter component for Vue.
+	header
+		h1 Vue Highlight.js
+		p 📜 #[a(href="https://github.com/isagalaev/highlight.js", target="_blank") Highlight.js] syntax highlighter component for #[a(href="https://vuejs.org", target="_blank") Vue].
 	hr.divider
-	#installation-container
-		h2 Installation
-		.code-block
-			highlight-code npm install vue-highlight.js
+	main
+		h2 Usage & Demo
+		h3 Main File:
+		highlight-code(lang="javascript")
+			include ./usage-codes/main-file.js
+		hr.gap.dash
+		h3 Normal Code Block:
+		// Highlight.js haven't supported Vue yet.
+		highlight-code(lang="html")
+			include:escape-html ./usage-codes/normal-code-block.vue
+		p.result
+		highlight-code(lang="javascript").
+			var map;
+			function initMap() {
+				map = new google.maps.Map(document.getElementById('map'), {
+					center: {lat: -34.397, lng: 150.644},
+					zoom: 8
+				});
+			}
+		hr.gap.dash
+		h3 Inline Code Block:
+		highlight-code(lang="html")
+			include:escape-html ./usage-codes/inline-code-block.vue
+		p.result
+		p
+			| Say #[highlight-code(lang="javascript", :inline="true") console.log('Hello, World!');].
+	footer
+		| Made by #[a(href="https://github.com/gluons", target="_blank") Saran Tanpituckpong]
 </template>
 
 <script>
@@ -15,37 +40,28 @@ export default {};
 
 <style lang="scss">
 #home {
-	text-align: center;
+	header, footer {
+		text-align: center;
+	}
+	footer {
+		font-size: .9em;
+		margin-top: 3.5em;
 
-	#installation-container {
-		.code-block {
-			margin: 0 auto;
-			max-width: 50%;
+		@media (max-width: 768px) {
+			margin-top: 2em;
 		}
 	}
+	main {
+		max-width: 80%;
+		margin: 0 auto;
 
-	/*
-	 * Credit: CSS Tricks
-	 * https://css-tricks.com/examples/hrs/
-	 */
-	hr.divider {
-		padding: 0;
-		border: none;
-		border-top: medium double #333;
-		color: #333;
-		text-align: center;
-		max-height: 0;
-		margin: 2em 0;
-
-		&::after {
-			content: '§';
-			display: inline-block;
-			position: relative;
-			top: -0.7em;
-			font-size: 1.5em;
-			padding: 0 0.25em;
-			background: white;
+		@media (max-width: 768px) {
+			max-width: 100%;
 		}
+	}
+	p.result:before {
+		content: 'Result:';
+		font-weight: bold;
 	}
 }
 </style>
