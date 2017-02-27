@@ -2,7 +2,10 @@
 	"root": true,
 	"parser": "babel-eslint",
 	"parserOptions": {
-		"sourceType": "module"
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true
+		}
 	},
 	"extends": "gluons",
 	"plugins": [

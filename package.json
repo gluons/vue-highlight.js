@@ -1,7 +1,7 @@
 {
-  "name": "vue-highlight.js-demo",
+  "name": "vue-highlight.js-docs",
   "version": "1.0.0",
-  "description": "Vue Highlight.js demo.",
+  "description": "Vue Highlight.js documentation.",
   "author": "Saran Tanpituckpong <sarunta@gmail.com>",
   "private": true,
   "scripts": {

@@ -1,16 +1,17 @@
 <template>
 	<div id="app">
-		<block-code></block-code>
-		<inline-code></inline-code>
+		<home></home>
 	</div>
 </template>
 
 <script>
-import * as components from './components';
+import * as views from './views';
 
 export default {
 	name: 'app',
-	components
+	components: {
+		...views
+	}
 };
 </script>
 
