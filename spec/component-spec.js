@@ -10,7 +10,7 @@ describe('Vue Highlight.js Component', () => {
 			let data = component.data();
 			expect(data).toBeObject();
 			expect(data.inlineCodeStyles).toBeObject();
-			expect(data.inlineCodeStyles['display']).toEqual('inline-block !important');
+			expect(data.inlineCodeStyles['display']).toEqual('inline !important');
 			expect(data.inlineCodeStyles['vertical-align']).toEqual('middle');
 		});
 		it('should has `lang` property', () => {
