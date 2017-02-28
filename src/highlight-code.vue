@@ -22,7 +22,7 @@ export default {
 	data() {
 		return {
 			inlineCodeStyles: {
-				'display': `inline-block !important`,
+				'display': `inline !important`,
 				'vertical-align': `middle`
 			}
 		};
