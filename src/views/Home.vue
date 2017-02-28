@@ -46,17 +46,13 @@ export default {};
 	footer {
 		font-size: .9em;
 		margin-top: 3.5em;
-
-		@media (max-width: 768px) {
-			margin-top: 2em;
-		}
 	}
 	main {
 		max-width: 80%;
 		margin: 0 auto;
 
 		@media (max-width: 768px) {
-			max-width: 100%;
+			max-width: 100% !important;
 		}
 	}
 	p.result:before {
