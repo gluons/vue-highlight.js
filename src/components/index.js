@@ -1,7 +1,5 @@
-import BlockCode from './BlockCode.vue';
-import InlineCode from './InlineCode.vue';
+import GithubCorner from './github-corner.vue';
 
 export {
-	BlockCode,
-	InlineCode
+	GithubCorner
 };

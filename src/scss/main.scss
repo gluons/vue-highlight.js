@@ -14,6 +14,10 @@ body {
 	}
 }
 
+.emoji {
+	font-family: "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 a {
 	color: $link-color;
 	text-decoration: none;
@@ -21,6 +25,15 @@ a {
 	&:hover {
 		text-decoration: underline;
 	}
+}
+
+blockquote {
+	border-left: .25em solid #ddd;
+	box-sizing: border-box;
+	font-size: .93em;
+	margin: 0 0 .5em;
+	padding: .5em 1em;
+	word-wrap: break-word;
 }
 
 ::selection {
