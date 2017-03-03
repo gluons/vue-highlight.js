@@ -41,16 +41,20 @@ export default {
 </script>
 
 <style lang="scss">
-.github-corner:hover {
-	.octo-arm {
-		animation: octocat-wave 560ms ease-in-out;
-	}
-	@media (max-width:500px) {
-		&:hover .octo-arm {
-			animation: none;
-		}
+.github-corner {
+	position: initial !important;
+
+	&:hover {
 		.octo-arm {
 			animation: octocat-wave 560ms ease-in-out;
+		}
+		@media (max-width:500px) {
+			&:hover .octo-arm {
+				animation: none;
+			}
+			.octo-arm {
+				animation: octocat-wave 560ms ease-in-out;
+			}
 		}
 	}
 }
