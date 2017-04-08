@@ -81,7 +81,9 @@ module.exports = function (config) {
 
 		// start these browsers
 		// available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-		browsers: ['FirefoxDeveloper'],
+		browsers: [
+			process.env.CI ? 'Firefox' : 'FirefoxDeveloper' // Use Firefox Developer Edition on local
+		],
 
 
 		// Continuous Integration mode
