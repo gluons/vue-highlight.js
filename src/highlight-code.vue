@@ -1,43 +1,25 @@
 <template lang="html">
-	<pre v-if="!inline"><code ref="code" :class="lang"><slot></slot></code></pre>
-	<span v-else><code ref="inline-code" :class="lang" :style="inlineCodeStyles"><slot></slot></code></span>
+	<block-code v-if="!inline" :lang="lang" :code="code"><slot></slot></block-code>
+	<inline-code v-else :lang="lang" :code="code"><slot></slot></inline-code>
 </template>
 
 <script>
-import hljs from 'highlight.js';
-
-hljs.configure({
-	languages: []
-});
+import BlockCode from './components/block-code.vue';
+import InlineCode from './components/inline-code.vue';
 
 export default {
 	name: 'highlight-code',
+	components: {
+		BlockCode,
+		InlineCode
+	},
 	props: {
 		lang: String,
 		inline: {
 			type: Boolean,
 			default: false
-		}
-	},
-	data() {
-		return {
-			inlineCodeStyles: {
-				'display': `inline !important`,
-				'vertical-align': `middle`
-			}
-		};
-	},
-	methods: {
-		init() {
-			let code = !this.inline ? this.$refs['code'] : this.$refs['inline-code'];
-			hljs.highlightBlock(code);
-		}
-	},
-	mounted() {
-		this.init();
-	},
-	updated() {
-		this.init();
+		},
+		code: String
 	}
 };
 </script>

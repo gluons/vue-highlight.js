@@ -3,12 +3,15 @@
   "version": "1.0.4",
   "description": "Highlight.js syntax highlighter component for Vue.",
   "main": "./dist/vue-highlight.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.config.js --open --hot --inline",
     "build": "rimraf ./dist && cross-env NODE_ENV=production webpack --config ./build/webpack.prod.config.js",
     "lint": "eslint .",
     "prepublish": "npm run build",
-    "test": "jasmine"
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
@@ -42,8 +45,14 @@
     "eslint-config-gluons": "^1.0.4",
     "eslint-plugin-vue": "^2.0.1",
     "jasmine": "^2.5.3",
-    "jasmine-expect": "^3.6.0",
-    "jasmine-spec-reporter": "^3.2.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.6.0",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-jasmine-matchers": "^3.7.0",
+    "karma-spec-reporter": "^0.0.30",
+    "karma-webpack": "^2.0.3",
     "rimraf": "^2.6.1",
     "style-loader": "^0.13.2",
     "vue": "^2.2.0",
