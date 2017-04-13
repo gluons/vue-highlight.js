@@ -106,3 +106,10 @@ Code content in code block.
 
 > You can use this property if you want to bind code content to your data source.  
   It's useful for dynamic code content.
+
+<br>
+
+## On Trello
+<a href="https://trello.com/b/Fkbsxc2K">
+	<img src="./media/trello-mark-blue.png" alt="Vue Highlight.js on Trello" width="100">
+</a>
