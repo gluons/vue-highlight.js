@@ -1,9 +1,17 @@
+const path = require('path');
 const merge = require('webpack-merge');
 const webpack = require('webpack');
 
 const baseWebpackConfig = require('./webpack.base.config');
 
 let webpackConfig = merge(baseWebpackConfig, {
+	output: {
+		path: path.resolve(__dirname, '../dist'),
+		filename: 'vue-highlight.min.js',
+		libraryTarget: 'umd',
+		library: 'VueHighlightJS',
+		umdNamedDefine: true
+	},
 	plugins: [
 		new webpack.optimize.UglifyJsPlugin({
 			sourceMap: true

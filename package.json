@@ -8,7 +8,9 @@
   ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.config.js --open --hot --inline",
-    "build": "rimraf ./dist && cross-env NODE_ENV=production webpack --config ./build/webpack.prod.config.js",
+    "build": "rimraf ./dist && npm run build:unmin && npm run build:min",
+    "build:min": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.config.js",
+    "build:unmin": "cross-env NODE_ENV=production webpack --config ./build/webpack.dist.config.js",
     "lint": "eslint .",
     "prepublish": "npm run build",
     "test": "karma start"
