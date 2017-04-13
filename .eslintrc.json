@@ -1,12 +1,6 @@
 {
-	"parserOptions": {
-		"sourceType": "module"
-	},
 	"env": {
 		"jasmine": true
 	},
-	"extends": "gluons",
-	"plugins": [
-		"vue"
-	]
+	"extends": "gluons/vue"
 }

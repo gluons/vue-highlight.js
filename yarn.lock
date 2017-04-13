@@ -1653,9 +1653,9 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-gluons@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/eslint-config-gluons/-/eslint-config-gluons-1.0.4.tgz#c3b6b7eaf19bbfbcfb78c35b2d5909d072c2adb9"
+eslint-config-gluons@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-gluons/-/eslint-config-gluons-2.0.1.tgz#75334c8b35c7a8e6bb561d80c6ed7d2a6c14e8df"
 
 eslint-plugin-html@^2.0.0:
   version "2.0.1"
