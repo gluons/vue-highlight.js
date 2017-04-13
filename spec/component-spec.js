@@ -1,33 +1,38 @@
-const VueHighlightJS = require('../dist/vue-highlight');
+import Vue from 'vue';
+import VueHighlightJS from '../src/highlight-code.vue';
+
+const Ctor = Vue.extend(VueHighlightJS);
 
 describe('Vue Highlight.js Component', () => {
+	let vm = new Ctor({
+		propsData: {
+			lang: 'javascript',
+			code: `console.log('Hello, World!');`
+		}
+	}).$mount();
+
 	describe('Component', () => {
-		let component = VueHighlightJS.component;
 		it(`should named 'highlight-code'`, () => {
-			expect(component.name).toEqual('highlight-code');
+			expect(vm.$options.name).toEqual('highlight-code');
 		});
-		it('should has `inlineCodeStyles` in `data`', () => {
-			let data = component.data();
-			expect(data).toBeObject();
-			expect(data.inlineCodeStyles).toBeObject();
-			expect(data.inlineCodeStyles['display']).toEqual('inline !important');
-			expect(data.inlineCodeStyles['vertical-align']).toEqual('middle');
+		it(`should have expected 'lang' property`, () => {
+			expect(vm.$props.lang).toBeString();
+			expect(vm.$props.lang).toEqual('javascript');
 		});
-		it('should has `lang` property', () => {
-			expect(component.props.lang).toEqual(String);
+		it(`should have expected 'inline' property`, () => {
+			expect(vm.$props.inline).toBeBoolean();
+			expect(vm.$props.inline).toBeFalse();
 		});
-		it('should has `inline` property', () => {
-			expect(component.props.inline).toBeObject();
-			expect(component.props.inline.type).toEqual(Boolean);
-			expect(component.props.inline.default).toBeFalse();
+		it(`should have expected 'code' property`, () => {
+			expect(vm.$props.code).toBeString();
+			expect(vm.$props.code).toEqual(`console.log('Hello, World!');`);
 		});
-		it('should has `init` method', () => {
-			expect(component.methods.init).toBeFunction();
+		it(`should have expected content`, () => {
+			expect(vm.$el.textContent).toBeString();
+			expect(vm.$el.textContent).toEqual(`console.log('Hello, World!');`);
 		});
-	});
-	describe('Main Plugin', () => {
-		it('should has `install` function', () => {
-			expect(VueHighlightJS.install).toBeFunction();
+		it(`content should be equal to 'code' property`, () => {
+			expect(vm.$el.textContent).toEqual(vm.$props.code);
 		});
 	});
 });
