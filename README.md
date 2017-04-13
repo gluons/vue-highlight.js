@@ -63,30 +63,46 @@ Vue File:
 console.log(str);</highlight-code>
 
 		<!-- Inline Code Block -->
-		<highlight-code lang="javascript" :inline="true">alert('Hello, World!');</highlight-code>
+		<highlight-code lang="javascript" inline>alert('Hello, World!');</highlight-code>
 	</div>
 </template>
 
 <script>
+// JavaScript...
 </script>
 
 <style>
+/* StyleSheet... */
 </style>
 ```
 
 ## API
 
 ### highlight-code
-**Properties:**
+Highlight.js code block.
 
-#### lang
+#### Slots
+Static code content.
+
+#### Properties
+
+##### lang
 Type: `String`
 
 Highlight.js [language](http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html#language-names-and-aliases).
 
-#### inline
+##### inline
 Type: `Boolean`  
 Default: `false`
 
-Set to `true` for **inline code block**.  
-Set to `false` (default) for **normal code block**.
+Enable **inline** code block when set it to `true`.
+
+##### code
+Type: `String`
+
+Code content in code block.  
+
+**Component will ignores `slots` static content if you use this.**
+
+> You can use this property if you want to bind code content to your data source.  
+  It's useful for dynamic code content.
