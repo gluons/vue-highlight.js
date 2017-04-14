@@ -1,4 +1,4 @@
-# vue-highlight.js-docs
+# Vue Highlight.js docs
 
 > Vue Highlight.js documentation.
 

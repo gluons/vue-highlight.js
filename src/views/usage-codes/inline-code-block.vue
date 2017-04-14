@@ -1,11 +1,13 @@
 <template>
 	<div>
-		Say <highlight-code lang="javascript" :inline="true">console.log('Hello, World!');</highlight-code>.
+		Say <highlight-code lang="javascript" inline>console.log('Hello, World!');</highlight-code>.
 	</div>
 </template>
 
 <script>
+// JavaScript...
 </script>
 
 <style>
+/* StyleSheet... */
 </style>

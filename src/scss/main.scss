@@ -18,7 +18,12 @@ body {
 	font-family: "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-a {
+.gh-button-container {
+	float: none !important;
+	margin: 0 !important;
+}
+
+a:not([class]) {
 	color: $link-color;
 	position: relative;
 	text-decoration: none;

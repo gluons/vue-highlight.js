@@ -11,7 +11,9 @@ function initMap() {
 </template>
 
 <script>
+// JavaScript...
 </script>
 
 <style>
+/* StyleSheet... */
 </style>

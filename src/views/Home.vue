@@ -1,8 +1,11 @@
 <template lang="pug">
 #home
 	header
-		h1 Vue Highlight.js
-		p #[span.emoji 📜] #[a(href="https://github.com/isagalaev/highlight.js", target="_blank") Highlight.js] syntax highlighter component for #[a(href="https://vuejs.org", target="_blank") Vue].
+		h1 #[v]ue Highlight.js
+		p #[span.emoji 📜] #[a(href="https://highlightjs.org", target="_blank") Highlight.js] syntax highlighter component for #[a(href="https://vuejs.org", target="_blank") Vue].
+		p.repo-buttons-container
+			gh-btns-star(slug='gluons/vue-highlight.js' show-count)
+			gh-btns-fork(slug='gluons/vue-highlight.js' show-count)
 	hr.divider
 	main
 		h2 Usage & Demo
@@ -30,16 +33,12 @@
 			include:escape-html ./usage-codes/inline-code-block.vue
 		p.result
 		p
-			| Say #[highlight-code(lang="javascript", :inline="true") console.log('Hello, World!');].
+			| Say #[highlight-code(lang="javascript", inline) console.log('Hello, World!');].
 	footer
 		div Made by #[a(href="https://github.com/gluons", target="_blank") Saran Tanpituckpong]
 		div(style="margin-top: .5em;")
 			a(href="https://github.com/gluons/vue-highlight.js/tree/docs", target="_blank") View Source
 </template>
-
-<script>
-export default {};
-</script>
 
 <style lang="scss">
 #home {
@@ -61,6 +60,11 @@ export default {};
 	p.result:before {
 		content: 'Result:';
 		font-weight: bold;
+	}
+	.repo-buttons-container {
+		.gh-button-container {
+			margin: 0 1em !important;
+		}
 	}
 }
 </style>

@@ -1,5 +1,7 @@
-import GithubCorner from './github-corner.vue';
+import GithubCorner from './GithubCorner.vue';
+import V from './V.vue';
 
-export {
-	GithubCorner
+export default {
+	GithubCorner,
+	V
 };

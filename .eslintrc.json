@@ -1,14 +1,5 @@
 {
 	"root": true,
 	"parser": "babel-eslint",
-	"parserOptions": {
-		"sourceType": "module",
-		"ecmaFeatures": {
-			"experimentalObjectRestSpread": true
-		}
-	},
-	"extends": "gluons",
-	"plugins": [
-		"vue"
-	]
+	"extends": "gluons/vue"
 }
