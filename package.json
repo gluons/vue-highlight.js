@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.config.js --open --hot --inline",
-    "build": "rimraf ./dist && npm run build:unmin && npm run build:min",
+    "prebuild": "rimraf ./dist",
+    "build": "run-p build:*",
     "build:min": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.config.js",
     "build:unmin": "cross-env NODE_ENV=production webpack --config ./build/webpack.dist.config.js",
     "lint": "eslint . --ext .js,.vue",
@@ -57,6 +58,7 @@
     "karma-jasmine-matchers": "^3.7.0",
     "karma-spec-reporter": "^0.0.31",
     "karma-webpack": "^2.0.3",
+    "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1",
     "style-loader": "^0.16.1",
     "vue": "2",
