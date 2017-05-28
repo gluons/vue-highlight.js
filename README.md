@@ -7,7 +7,7 @@
 [![Dependency Status](https://dependencyci.com/github/gluons/vue-highlight.js/badge?style=flat-square)](https://dependencyci.com/github/gluons/vue-highlight.js)
 [![ESLint Gluons](https://img.shields.io/badge/code%20style-gluons-9C27B0.svg?style=flat-square)](https://github.com/gluons/eslint-config-gluons)
 
-📜 [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighter component for Vue.
+📜 [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighter component for [Vue](https://vuejs.org).
 
 ## Installation
 
@@ -15,15 +15,31 @@
 
 [![NPM](https://nodei.co/npm/vue-highlight.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/vue-highlight.js)
 
-```
-npm install vue-highlight.js
-```
+1. Install [**highlight.js**](https://github.com/isagalaev/highlight.js):
+
+   ```bash
+   npm install highlight.js
+   ```
+
+2. Install **Vue Highlight.js**:
+
+   ```bash
+   npm install vue-highlight.js
+   ```
 
 **Or [Yarn](https://yarnpkg.com):**
 
-```
-yarn add vue-highlight.js
-```
+1. Install [**highlight.js**](https://github.com/isagalaev/highlight.js):
+
+   ```bash
+   yarn add highlight.js
+   ```
+
+2. Install **Vue Highlight.js**:
+
+   ```bash
+   yarn add vue-highlight.js
+   ```
 
 ## Demo
 
@@ -31,7 +47,8 @@ Go to https://gluons.github.io/vue-highlight.js
 
 ## Usage
 
-Main file:
+**Main file:**
+
 ```javascript
 import Vue from 'vue';
 import VueHighlightJS from 'vue-highlight.js';
@@ -54,13 +71,16 @@ new Vue({
 });
 ```
 
-Vue File:
+**Vue file:**
+
 ```vue
 <template>
 	<div id="app">
 		<!-- Code Block -->
-		<highlight-code lang="javascript">let str = 'Hello, World!';
-console.log(str);</highlight-code>
+		<highlight-code lang="javascript">
+			let str = 'Hello, World!';
+			console.log(str);
+		</highlight-code>
 
 		<!-- Inline Code Block -->
 		<highlight-code lang="javascript" inline>alert('Hello, World!');</highlight-code>

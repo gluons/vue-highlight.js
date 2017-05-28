@@ -5,6 +5,8 @@
 
 <script>
 import hljs from 'highlight.js';
+import detectIndent from 'detect-indent';
+import redent from 'redent';
 
 hljs.configure({
 	languages: []
@@ -22,10 +24,18 @@ export default {
 		}
 	},
 	methods: {
+		indentCode(codeContent) {
+			let indent = detectIndent(codeContent).indent || '\t';
+			codeContent = redent(codeContent, 0, indent);
+
+			return codeContent.trim();
+		},
 		init() {
 			let codeElm = this.$refs['code-elm'];
 			if (this.hasCode) {
-				codeElm.textContent = this.code;
+				codeElm.textContent = this.indentCode(this.code);
+			} else {
+				codeElm.textContent = this.indentCode(codeElm.textContent);
 			}
 			hljs.highlightBlock(codeElm);
 		}
