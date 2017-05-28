@@ -2,13 +2,15 @@
 	<div id="app">
 		<h1>Static Code</h1>
 		<div><b>Code Block:</b></div>
-		<highlight-code lang="javascript">let map;
-function initMap() {
-	map = new google.maps.Map(document.getElementById('map'), {
-		center: {lat: -34.397, lng: 150.644},
-		zoom: 8
-	});
-}</highlight-code>
+		<highlight-code lang="javascript">
+			let map;
+			function initMap() {
+				map = new google.maps.Map(document.getElementById('map'), {
+					center: {lat: -34.397, lng: 150.644},
+					zoom: 8
+				});
+			}
+		</highlight-code>
 		<hr class="divider">
 		<div>
 			<b>Inline Code Block:</b> <highlight-code lang="javascript" inline>console.log('Hello, World!');</highlight-code>
@@ -29,28 +31,32 @@ function initMap() {
 </template>
 
 <script>
-const firstBlockCode = `let map;
-function initMap() {
-	map = new google.maps.Map(document.getElementById('map'), {
-		center: {lat: -34.397, lng: 150.644},
-		zoom: 8
-	});
-}`;
+const firstBlockCode = `
+	let map;
+	function initMap() {
+		map = new google.maps.Map(document.getElementById('map'), {
+			center: {lat: -34.397, lng: 150.644},
+			zoom: 8
+		});
+	}
+`;
 
-const secondBlockCode = `function initMap() {
-	let myLatLng = {lat: -25.363, lng: 131.044};
+const secondBlockCode = `
+	function initMap() {
+		let myLatLng = {lat: -25.363, lng: 131.044};
 
-	let map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 4,
-		center: myLatLng
-	});
+		let map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 4,
+			center: myLatLng
+		});
 
-	let marker = new google.maps.Marker({
-		position: myLatLng,
-		map: map,
-		title: 'Hello World!'
-	});
-}`;
+		let marker = new google.maps.Marker({
+			position: myLatLng,
+			map: map,
+			title: 'Hello World!'
+		});
+	}
+`;
 
 const firstInlineCode = `console.log('Hello, World!');`;
 const secondInlineCode = `alert('Hello, Mars!');`;
