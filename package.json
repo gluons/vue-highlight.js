@@ -1,6 +1,6 @@
 {
   "name": "vue-highlight.js",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Highlight.js syntax highlighter component for Vue.",
   "main": "./dist/vue-highlight.js",
   "files": [
