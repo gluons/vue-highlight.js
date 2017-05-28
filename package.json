@@ -6,14 +6,16 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "rimraf ./dist/ && node build/build.js",
+    "prebuild": "rimraf ./dist/",
+    "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test.\" && exit 0"
   },
   "dependencies": {
+    "highlight.js": "^9.11.0",
     "vue": "^2.2.1",
     "vue-github-buttons": "^1.0.1",
-    "vue-highlight.js": "^1.1.0"
+    "vue-highlight.js": "^2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
