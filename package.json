@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/gluons/vue-highlight.js/issues"
   },
-  "homepage": "https://github.com/gluons/vue-highlight.js",
+  "homepage": "https://gluons.github.io/vue-highlight.js/",
   "peerDependencies": {
     "highlight.js": "^9.11.0",
     "vue": "2"
