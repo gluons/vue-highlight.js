@@ -1,0 +1,4 @@
+exclude:
+  - /build/.*
+languages:
+  - javascript
