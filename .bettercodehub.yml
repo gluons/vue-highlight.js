@@ -1,4 +1,5 @@
 exclude:
   - /build/.*
+  - karma.conf.js
 languages:
   - javascript
