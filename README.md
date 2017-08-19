@@ -4,6 +4,7 @@
 [![npm](https://img.shields.io/npm/v/vue-highlight.js.svg?style=flat-square)](https://www.npmjs.com/package/vue-highlight.js)
 [![npm](https://img.shields.io/npm/dt/vue-highlight.js.svg?style=flat-square)](https://www.npmjs.com/package/vue-highlight.js)
 [![Travis](https://img.shields.io/travis/gluons/vue-highlight.js.svg?style=flat-square)](https://travis-ci.org/gluons/vue-highlight.js)
+[![BCH compliance](https://bettercodehub.com/edge/badge/gluons/vue-highlight.js?style=flat-square&branch=master)](https://bettercodehub.com/)
 [![Dependency Status](https://dependencyci.com/github/gluons/vue-highlight.js/badge?style=flat-square)](https://dependencyci.com/github/gluons/vue-highlight.js)
 [![ESLint Gluons](https://img.shields.io/badge/code%20style-gluons-9C27B0.svg?style=flat-square)](https://github.com/gluons/eslint-config-gluons)
 
