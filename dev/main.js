@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import VueHighlightJS from '../src/index';
+import VueHighlightJS from '@/index';
 
 import App from './App.vue';
 

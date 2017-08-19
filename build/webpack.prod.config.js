@@ -1,26 +1,13 @@
-const path = require('path');
 const merge = require('webpack-merge');
 const webpack = require('webpack');
 
-const baseWebpackConfig = require('./webpack.base.config');
+const baseConfig = require('./webpack.base.config');
 
-let webpackConfig = merge(baseWebpackConfig, {
-	output: {
-		path: path.resolve(__dirname, '../dist'),
-		filename: 'vue-highlight.min.js',
-		libraryTarget: 'umd',
-		library: 'VueHighlightJS',
-		umdNamedDefine: true
-	},
-	plugins: [
-		new webpack.optimize.UglifyJsPlugin({
-			sourceMap: true
-		}),
-		new webpack.LoaderOptionsPlugin({
-			minimize: true
-		})
-	],
+const prodConfig = merge(baseConfig, {
 	devtool: 'source-map',
+	stats: {
+		modules: false
+	},
 	externals: {
 		'highlight.js': {
 			root: 'hljs',
@@ -31,4 +18,41 @@ let webpackConfig = merge(baseWebpackConfig, {
 	}
 });
 
-module.exports = webpackConfig;
+const prodMinConfig = merge(prodConfig, {
+	plugins: [
+		new webpack.LoaderOptionsPlugin({
+			minimize: true
+		}),
+		new webpack.optimize.UglifyJsPlugin({
+			sourceMap: true
+		})
+	]
+});
+
+module.exports = [
+	// CommonJS
+	merge(prodConfig, {
+		output: {
+			filename: 'vue-highlight.js',
+			libraryExport: 'default'
+		}
+	}),
+	merge(prodMinConfig, {
+		output: {
+			filename: 'vue-highlight.min.js',
+			libraryExport: 'default'
+		}
+	}),
+
+	// ES Module
+	merge(prodConfig, {
+		output: {
+			filename: 'vue-highlight.esm.js'
+		}
+	}),
+	merge(prodMinConfig, {
+		output: {
+			filename: 'vue-highlight.esm.min.js'
+		}
+	})
+];

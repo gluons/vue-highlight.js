@@ -1,6 +1,9 @@
 // Karma configuration
 // Generated on Sat Apr 08 2017 21:35:11 GMT+0700 (ICT)
 
+const merge = require('webpack-merge');
+const baseConfig = require('./build/webpack.base.config');
+
 module.exports = function (config) {
 	config.set({
 
@@ -30,26 +33,9 @@ module.exports = function (config) {
 			'spec/**/*[sS]pec.js': ['webpack']
 		},
 
-		webpack: {
-			stats: 'minimal',
-			module: {
-				rules: [
-					{
-						test: /\.vue$/,
-						loader: 'vue-loader'
-					},
-					{
-						test: /\.js$/,
-						loader: 'babel-loader',
-						exclude: /node_modules/
-					},
-					{
-						test: /\.css$/,
-						use: ['style-loader', 'css-loader']
-					}
-				]
-			}
-		},
+		webpack: merge(baseConfig, {
+			stats: 'minimal'
+		}),
 
 		webpackMiddleware: {
 			stats: 'minimal'
@@ -76,7 +62,7 @@ module.exports = function (config) {
 
 
 		// enable / disable watching file and executing tests whenever any file changes
-		autoWatch: false,
+		autoWatch: true,
 
 
 		// start these browsers
@@ -88,7 +74,7 @@ module.exports = function (config) {
 
 		// Continuous Integration mode
 		// if true, Karma captures browsers, runs the tests and exits
-		singleRun: true,
+		singleRun: process.env.CI ? true : false,
 
 		// Concurrency level
 		// how many browser should be started simultaneous
