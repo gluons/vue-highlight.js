@@ -4,8 +4,8 @@
 </template>
 
 <script>
-import BlockCode from './components/block-code.vue';
-import InlineCode from './components/inline-code.vue';
+import BlockCode from './components/BlockCode';
+import InlineCode from './components/InlineCode';
 
 export default {
 	name: 'highlight-code',

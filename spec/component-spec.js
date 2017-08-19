@@ -1,7 +1,7 @@
 import Vue from 'vue';
-import VueHighlightJS from '../src/highlight-code.vue';
+import HighlightCode from '@/HighlightCode.vue';
 
-const Ctor = Vue.extend(VueHighlightJS);
+const Ctor = Vue.extend(HighlightCode);
 
 describe('Vue Highlight.js Component', () => {
 	let vm = new Ctor({
