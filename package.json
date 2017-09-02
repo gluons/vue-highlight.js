@@ -13,7 +13,7 @@
     "prebuild": "rimraf ./dist/*",
     "build": "webpack --config ./build/webpack.prod.config.js",
     "lint": "eslint . --ext .js,.vue",
-    "prepublishOnly": "npm test && npm run build",
+    "prepublishOnly": "npm run test:single && npm run build",
     "test": "karma start",
     "test:single": "karma start --single-run"
   },
