@@ -1,5 +1,7 @@
 import HighlightCode from './HighlightCode';
 
+import './languages';
+
 /**
  * Install Vue Highlight.js as plugin.
  *

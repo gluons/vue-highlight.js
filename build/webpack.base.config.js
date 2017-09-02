@@ -1,5 +1,12 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+
+const packageJSON = require('../package.json');
+
+const banner = `Vue Highlight.js v${packageJSON.version}
+(c) 2017 Saran Tanpituckpong
+Released under the ${packageJSON.license} License`;
 
 module.exports = {
 	entry: path.resolve(__dirname, '../src/index.js'),
@@ -35,6 +42,7 @@ module.exports = {
 		]
 	},
 	plugins: [
+		new webpack.BannerPlugin(banner),
 		new ExtractTextPlugin('[name].css')
 	],
 	resolve: {
