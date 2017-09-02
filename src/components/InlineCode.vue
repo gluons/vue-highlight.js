@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import hljs from 'highlight.js';
+import * as hljs from 'highlight.js';
 
 hljs.configure({
 	languages: []

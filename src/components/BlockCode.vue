@@ -4,9 +4,9 @@
 </template>
 
 <script>
-import hljs from 'highlight.js';
-import detectIndent from 'detect-indent';
-import redent from 'redent';
+import * as hljs from 'highlight.js';
+import * as detectIndent from 'detect-indent';
+import * as redent from 'redent';
 
 hljs.configure({
 	languages: []
