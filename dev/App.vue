@@ -11,6 +11,28 @@
 				});
 			}
 		</highlight-code>
+		<highlight-code lang="vue">
+			&lt;template&gt;
+				&lt;div id="app"&gt;
+					&lt;!-- Code Block --&gt;
+					&lt;highlight-code lang="javascript"&gt;
+						let str = 'Hello, World!';
+						console.log(str);
+					&lt;/highlight-code&gt;
+
+					&lt;!-- Inline Code Block --&gt;
+					&lt;highlight-code lang="javascript" inline&gt;alert('Hello, World!');&lt;/highlight-code&gt;
+				&lt;/div&gt;
+			&lt;/template&gt;
+
+			&lt;script&gt;
+			// JavaScript...
+			&lt;/script&gt;
+
+			&lt;style&gt;
+			/* StyleSheet... */
+			&lt;/style&gt;
+		</highlight-code>
 		<hr class="divider">
 		<div>
 			<b>Inline Code Block:</b> <highlight-code lang="javascript" inline>console.log('Hello, World!');</highlight-code>
