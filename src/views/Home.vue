@@ -15,7 +15,7 @@
 		hr.gap.dash
 		h3 Normal Code Block:
 		// Highlight.js haven't supported Vue yet.
-		highlight-code(lang="html")
+		highlight-code(lang="vue")
 			include:escape-html ./usage-codes/normal-code-block.vue
 		p.result
 		highlight-code(lang="javascript").
@@ -29,7 +29,7 @@
 		blockquote Sample code is taken from #[a(href="https://developers.google.com/maps/documentation/javascript/examples/map-simple", target="_blank") Simple Map | Google Maps JavaScript API]
 		hr.gap.dash
 		h3 Inline Code Block:
-		highlight-code(lang="html")
+		highlight-code(lang="vue")
 			include:escape-html ./usage-codes/inline-code-block.vue
 		p.result
 		p

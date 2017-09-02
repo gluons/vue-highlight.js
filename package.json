@@ -12,10 +12,10 @@
     "test": "echo \"No test.\" && exit 0"
   },
   "dependencies": {
-    "highlight.js": "^9.11.0",
-    "vue": "^2.2.1",
-    "vue-github-buttons": "^1.0.1",
-    "vue-highlight.js": "^2.0.0"
+    "highlight.js": "^9.12.0",
+    "vue": "^2.4.2",
+    "vue-github-buttons": "^1.0.3",
+    "vue-highlight.js": "^2.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
@@ -55,7 +55,7 @@
     "url-loader": "^0.5.7",
     "vue-loader": "^11.0.0",
     "vue-style-loader": "^2.0.0",
-    "vue-template-compiler": "^2.2.1",
+    "vue-template-compiler": "^2.4.2",
     "webpack": "^2.2.1",
     "webpack-bundle-analyzer": "^2.2.1",
     "webpack-dev-middleware": "^1.10.0",
