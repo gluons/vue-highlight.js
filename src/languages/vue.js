@@ -1,3 +1,5 @@
-import * as xml from 'highlight.js/lib/languages/xml';
+import * as hljs from 'highlight.js';
 
-export default xml;
+export default function () {
+	return hljs.getLanguage('xml');
+}
