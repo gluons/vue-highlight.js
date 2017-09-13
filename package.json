@@ -15,7 +15,7 @@
     "lint": "eslint . --ext .js,.vue",
     "prepublishOnly": "npm run test:single && npm run build",
     "test": "karma start",
-    "test:single": "karma start --single-run"
+    "test:watch": "karma start --no-single-run"
   },
   "repository": {
     "type": "git",
