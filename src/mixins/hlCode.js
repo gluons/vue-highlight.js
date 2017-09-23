@@ -52,17 +52,20 @@ export default {
 		code = !inline ? this.indentCode(code) : code; // Don't indent code if in inline mode.
 		let highlightedCode = lang ? hljs.highlight(lang, code).value : this.escape(code); // If no `lang`, just display plain code.
 
-		return createElement('pre', [
-			createElement('code', {
-				'class': [
-					'hljs',
-					...(lang ? [lang] : [])
-				],
-				style: inline ? this.inlineStyles : {},
-				domProps: {
-					innerHTML: highlightedCode
-				}
-			})
-		]);
+		return createElement(
+			!inline ? 'pre' : 'span',
+			[
+				createElement('code', {
+					'class': [
+						'hljs',
+						...(lang ? [lang] : [])
+					],
+					style: inline ? this.inlineStyles : {},
+					domProps: {
+						innerHTML: highlightedCode
+					}
+				})
+			]
+		);
 	}
 };

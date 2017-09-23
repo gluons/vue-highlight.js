@@ -114,6 +114,9 @@ export default {
 </script>
 
 <style lang="css">
+#app {
+	margin-bottom: 5rem;
+}
 hr.divider {
 	margin: 1em 0;
 	border-color: transparent;
