@@ -5,6 +5,7 @@
   "main": "./dist/vue-highlight.js",
   "module": "./dist/vue-highlight.esm.js",
   "unpkg": "./dist/vue-highlight.min.js",
+  "jsdelivr": "./dist/vue-highlight.min.js",
   "files": [
     "dist"
   ],
