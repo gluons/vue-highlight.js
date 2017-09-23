@@ -123,14 +123,23 @@ Type: `String`
 
 Code content in code block.  
 
-**Component will ignores `slots` static content if you use this.**
-
-> You can use this property if you want to bind code content to your data source.  
+> You can use this prop if you want to bind code content to your data source.  
   It's useful for dynamic code content.
+
+**Component will ignore [`slot`](https://vuejs.org/v2/guide/components.html#Single-Slot) static content if you use this.**
+
+##### auto
+Type: `Boolean`
+
+Enable auto detecting code language.
+
+> Code will be detected by [highlight.js' `highlightAuto`](https://highlightjs.readthedocs.io/en/latest/api.html#highlightauto-value-languagesubset) function.
+
+**Component will ignore `lang` prop if you use this.**
 
 <br>
 
-## On Trello
+## Roadmap on Trello
 <a href="https://trello.com/b/Fkbsxc2K">
 	<img src="./media/trello-mark-blue.png" alt="Vue Highlight.js on Trello" width="100">
 </a>
