@@ -129,4 +129,7 @@ hr.segment-divider {
 	border-right: 0;
 	border-bottom: 1px solid #444;
 }
+code {
+	tab-size: 4;
+}
 </style>
