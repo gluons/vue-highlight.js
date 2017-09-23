@@ -3,11 +3,6 @@ import * as hljs from 'highlight.js';
 
 import { escape, getSlotText, indentCode } from '@/lib';
 
-// Disable auto detect language.
-hljs.configure({
-	languages: []
-});
-
 export default {
 	name: 'highlight-code',
 	props: {
@@ -16,7 +11,8 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		code: String
+		code: String,
+		auto: Boolean
 	},
 	data() {
 		return {
@@ -36,9 +32,15 @@ export default {
 		let lang = this.lang;
 		let inline = this.inline;
 		let code = hasCode ? this.code : getSlotText(this.$slots.default); // If no `code`, get text from default slot.
+		let auto = this.auto;
 
 		code = !inline ? indentCode(code) : code; // Don't indent code if in inline mode.
-		let highlightedCode = lang ? hljs.highlight(lang, code).value : escape(code); // If no `lang`, just display plain code.
+		let highlightedCode;
+		if (auto) {
+			({ language: lang, value: highlightedCode } = hljs.highlightAuto(code));
+		} else {
+			highlightedCode = lang ? hljs.highlight(lang, code).value : escape(code); // If no `lang`, just display plain code.
+		}
 
 		return createElement(
 			!inline ? 'pre' : 'span',

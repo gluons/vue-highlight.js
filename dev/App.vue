@@ -2,7 +2,7 @@
 	<div id="app">
 		<h1>Static Code</h1>
 		<div><b>Code Block:</b></div>
-		<highlight-code lang="javascript">
+		<highlight-code auto>
 			let map;
 			function initMap() {
 				map = new google.maps.Map(document.getElementById('map'), {
