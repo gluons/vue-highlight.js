@@ -1,8 +1,7 @@
-<template>
-	<div id="app">
-		<github-corner url="https://github.com/gluons/vue-highlight.js"></github-corner>
-		<home></home>
-	</div>
+<template lang="pug">
+#app
+	github-corners(repo='gluons/vue-highlight.js')
+	home
 </template>
 
 <script>

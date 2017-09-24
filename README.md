@@ -1,6 +1,6 @@
 # Vue Highlight.js docs
 
-> Vue Highlight.js documentation.
+> Vue Highlight.js documentation and demo.
 
 ## Build Setup
 

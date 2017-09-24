@@ -16,14 +16,23 @@ exports.cssLoaders = function (options) {
     loader: 'css-loader',
     options: {
       minimize: process.env.NODE_ENV === 'production',
+      sourceMap: options.sourceMap,
+      importLoaders: 1
+    }
+  }
+
+  var postcssLoader = {
+  loader: 'postcss-loader',
+    options: {
       sourceMap: options.sourceMap
     }
   }
 
   // generate loader string to be used with extract text plugin
   function generateLoaders (loader, loaderOptions) {
-    var loaders = [cssLoader]
+    var loaders = [cssLoader, postcssLoader]
     if (loader) {
+      cssLoader.options.importLoaders++;
       loaders.push({
         loader: loader + '-loader',
         options: Object.assign({}, loaderOptions, {
@@ -44,7 +53,7 @@ exports.cssLoaders = function (options) {
     }
   }
 
-  // http://vuejs.github.io/vue-loader/en/configurations/extract-css.html
+  // https://vue-loader.vuejs.org/en/configurations/extract-css.html
   return {
     css: generateLoaders(),
     postcss: generateLoaders(),

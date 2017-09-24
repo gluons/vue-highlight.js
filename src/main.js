@@ -3,6 +3,7 @@
 import Vue from 'vue';
 import VueHighlightJS from 'vue-highlight.js';
 import VueGitHubButtons from 'vue-github-buttons';
+import VueGitHubCorners from 'vue-gh-corners';
 import App from './App';
 
 import components from './components';
@@ -12,11 +13,13 @@ Vue.config.productionTip = false;
 // Styles
 import 'highlight.js/styles/monokai.css';
 import 'vue-github-buttons/dist/vue-github-buttons.css';
+import 'vue-gh-corners/dist/vue-github-corners.css';
 import './scss/main.scss';
 
 // Plugins
 Vue.use(VueHighlightJS);
 Vue.use(VueGitHubButtons);
+Vue.use(VueGitHubCorners);
 
 // Components
 Object.keys(components).forEach(key => {
