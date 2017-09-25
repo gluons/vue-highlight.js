@@ -8,37 +8,28 @@
 			gh-btns-fork(slug='gluons/vue-highlight.js' show-count)
 	hr.divider
 	main
-		h2 Usage & Demo
-		h3 Main File:
-		highlight-code(lang="javascript")
-			include ./usage-codes/main-file.js
+		usage
 		hr.gap.dash
-		h3 Normal Code Block:
-		// Highlight.js haven't supported Vue yet.
-		highlight-code(lang="vue")
-			include:escape-html ./usage-codes/normal-code-block.vue
-		p.result
-		highlight-code(lang="javascript").
-			var map;
-			function initMap() {
-				map = new google.maps.Map(document.getElementById('map'), {
-					center: {lat: -34.397, lng: 150.644},
-					zoom: 8
-				});
-			}
-		blockquote Sample code is taken from #[a(href="https://developers.google.com/maps/documentation/javascript/examples/map-simple", target="_blank") Simple Map | Google Maps JavaScript API]
-		hr.gap.dash
-		h3 Inline Code Block:
-		highlight-code(lang="vue")
-			include:escape-html ./usage-codes/inline-code-block.vue
-		p.result
-		p
-			| Say #[highlight-code(lang="javascript", inline) console.log('Hello, World!');].
+		demo
 	footer
 		div Made by #[a(href="https://github.com/gluons", target="_blank") Saran Tanpituckpong]
 		div(style="margin-top: .5em;")
 			a(href="https://github.com/gluons/vue-highlight.js/tree/docs", target="_blank") View Source
 </template>
+
+<script>
+import Usage from './home/Usage.vue';
+import Demo from './home/Demo.vue';
+
+export default {
+	name: 'home',
+	components: {
+		Usage,
+		Demo
+	}
+};
+</script>
+
 
 <style lang="scss">
 #home {

@@ -14,6 +14,7 @@
   "dependencies": {
     "highlight.js": "^9.12.0",
     "vue": "^2.4.2",
+    "vue-codemirror": "^3.1.6",
     "vue-gh-corners": "^2.0.0",
     "vue-github-buttons": "^2.0.5",
     "vue-highlight.js": "^2.1.0"

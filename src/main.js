@@ -4,6 +4,7 @@ import Vue from 'vue';
 import VueHighlightJS from 'vue-highlight.js';
 import VueGitHubButtons from 'vue-github-buttons';
 import VueGitHubCorners from 'vue-gh-corners';
+import VueCodeMirror from 'vue-codemirror';
 import App from './App';
 
 import components from './components';
@@ -20,6 +21,7 @@ import './scss/main.scss';
 Vue.use(VueHighlightJS);
 Vue.use(VueGitHubButtons);
 Vue.use(VueGitHubCorners);
+Vue.use(VueCodeMirror);
 
 // Components
 Object.keys(components).forEach(key => {
