@@ -40,8 +40,13 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import '../../scss/mixins.scss';
+
+$md-button-color: #9c27b0;
+
 button.reset-btn {
 	margin-top: 1em;
+	@include md-button($md-button-color);
 }
 </style>
