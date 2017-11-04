@@ -10,7 +10,7 @@
 
 📜 [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighter component for [Vue](https://vuejs.org).
 
-## Installation
+## ⚙️ Installation
 
 **Via [NPM](https://www.npmjs.com):**
 
@@ -42,11 +42,11 @@
    yarn add vue-highlight.js
    ```
 
-## Demo
+## 🎬 Demo
 
 Go to https://gluons.github.io/vue-highlight.js
 
-## Usage
+## 🛂 Usage
 
 **Main file:**
 
@@ -97,15 +97,15 @@ new Vue({
 </style>
 ```
 
-## API
+## 📚 API
 
-### highlight-code
+### `<highlight-code>`
 Highlight.js code block.
 
-#### Slots
+#### 🔰 Slots
 Static code content.
 
-#### Properties
+#### 🔰 Properties
 
 ##### lang
 Type: `String`
@@ -137,9 +137,24 @@ Enable auto detecting code language.
 
 **Component will ignore `lang` prop if you use this.**
 
+## ❓ FAQ
+
+- **How to write HTML code inside slot?**
+
+  You have to **escape** all HTML tags before add it into slot.  
+  If you didn't do that, browser will interpret those tags as HTML element.  
+  ℹ️ See [isagalaev/highlight.js#866](https://github.com/isagalaev/highlight.js/issues/866)
+
+  > If you use `code` property instead of `slot`, you don't need to worry about this.  
+    **Vue Highlight.js** will automatically escape it for you.
+- **Why did I get `SyntaxError: Unterminated template literal` error when use `<script></script>` in `code` property?**
+
+  If you add `</script>` at anywhere inside `script` tag, although it's a `string` inside quotes, it will **always** close the `script` tag.  
+  ℹ️ See ["Unterminated template literal" syntax error when literal contains script tag](https://stackoverflow.com/q/36607932/1675907)
+
 <br>
 
-## Roadmap on Trello
+## 🛣️ Roadmap on Trello
 <a href="https://trello.com/b/Fkbsxc2K">
 	<img src="./media/trello-mark-blue.png" alt="Vue Highlight.js on Trello" width="100">
 </a>
