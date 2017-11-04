@@ -147,7 +147,7 @@ Enable auto detecting code language.
 
   > If you use `code` property instead of `slot`, you don't need to worry about this.  
     **Vue Highlight.js** will automatically escape it for you.
-- **Why did I get `SyntaxError: Unterminated template literal` error when use `<script></script>` in `code` property?**
+- **Why did I get `SyntaxError: Unterminated template literal` error when used `<script></script>` in `code` property?**
 
   If you add `</script>` at anywhere inside `script` tag, although it's a `string` inside quotes, it will **always** close the `script` tag.  
   ℹ️ See ["Unterminated template literal" syntax error when literal contains script tag](https://stackoverflow.com/q/36607932/1675907)
