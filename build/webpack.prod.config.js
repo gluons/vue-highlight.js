@@ -49,10 +49,5 @@ module.exports = [
 		output: {
 			filename: 'vue-highlight.esm.js'
 		}
-	}),
-	merge(prodMinConfig, {
-		output: {
-			filename: 'vue-highlight.esm.min.js'
-		}
 	})
 ];
