@@ -150,10 +150,3 @@ Enable auto detecting code language.
 
   If you add `</script>` at anywhere inside `script` tag, although it's a `string` inside quotes, it will **always** close the `script` tag.  
   ℹ️ See ["Unterminated template literal" syntax error when literal contains script tag](https://stackoverflow.com/q/36607932/1675907)
-
-<br>
-
-## 🛣️ Roadmap on Trello
-<a href="https://trello.com/b/Fkbsxc2K">
-	<img src="./media/trello-mark-blue.png" alt="Vue Highlight.js on Trello" width="100">
-</a>

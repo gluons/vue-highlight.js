@@ -1,10 +1,10 @@
-<script>
-import * as hljs from 'highlight.js';
+<script lang="ts">
+import hljs from 'highlight.js';
 
-import { escape, getSlotText, indentCode } from '@/lib';
+import { escape, getSlotText, indentCode } from './lib/';
 
 export default {
-	name: 'highlight-code',
+	name: 'HighlightCode',
 	props: {
 		lang: String,
 		inline: {
@@ -23,18 +23,19 @@ export default {
 		};
 	},
 	computed: {
-		hasCode() {
+		hasCode(): boolean {
 			return (typeof this.code === 'string') && (this.code.length > 0);
 		}
 	},
 	render(createElement) {
-		let hasCode = this.hasCode;
-		let lang = this.lang;
-		let inline = this.inline;
-		let code = hasCode ? this.code : getSlotText(this.$slots.default); // If no `code`, get text from default slot.
-		let auto = this.auto;
+		const hasCode: boolean = this.hasCode;
+		const inline: boolean = this.inline;
+		const auto: boolean = this.auto;
+		let lang: string = this.lang;
+		let code: string = hasCode ? this.code : getSlotText(this.$slots.default); // If no `code`, get text from default slot.
 
 		code = !inline ? indentCode(code) : code; // Don't indent code if in inline mode.
+
 		let highlightedCode;
 		if (auto) {
 			({ language: lang, value: highlightedCode } = hljs.highlightAuto(code));

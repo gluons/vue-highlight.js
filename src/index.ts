@@ -1,14 +1,14 @@
-import HighlightCode from './HighlightCode';
+import Vue from 'vue';
+
+import HighlightCode from './HighlightCode.vue';
 
 import './languages';
 
 /**
  * Install Vue Highlight.js as plugin.
- *
- * @param {Vue} Vue
  */
-function install(Vue) {
-	Vue.component('highlight-code', HighlightCode);
+function install(vue: typeof Vue): void {
+	vue.component('highlight-code', HighlightCode);
 }
 
 if ((typeof window !== 'undefined') && window.Vue) {

@@ -1,3 +1,5 @@
+import { VNode } from 'vue';
+
 /**
  * Deeply get concatenated text from slot.
  *
@@ -5,7 +7,7 @@
  * @param {VNode[]} slot A slot. (The collection of VNode)
  * @returns {string}
  */
-export default function getSlotText(slot) {
+export default function getSlotText(slot: VNode[]): string {
 	if (Array.isArray(slot)) {
 		return slot.map(node => { // node is VNode
 			if (Array.isArray(node.children) && (node.children.length > 0)) {

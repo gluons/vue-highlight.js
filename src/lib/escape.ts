@@ -5,7 +5,7 @@
  * @param {string} code Code.
  * @returns {string}
  */
-export default function escape(code) {
+export default function escape(code: string): string {
 	if (typeof code === 'string') {
 		return code
 			.replace(/&/g, '&amp;')
