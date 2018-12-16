@@ -1,6 +1,0 @@
-exclude:
-  - /build/.*
-  - /karma\.conf\.js
-  - /poi\.config\.js
-languages:
-  - javascript
