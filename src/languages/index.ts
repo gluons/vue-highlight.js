@@ -1,5 +1,5 @@
-import { registerLanguage } from 'highlight.js';
+import hljs from 'highlight.js/lib/highlight';
 
 import Vue from './vue';
 
-registerLanguage('vue', Vue);
+hljs.registerLanguage('vue', Vue);
