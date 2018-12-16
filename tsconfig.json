@@ -1,0 +1,6 @@
+{
+	"extends": "tsconfig-gluons",
+	"include": [
+		"src"
+	]
+}

@@ -41,6 +41,7 @@
     "vue": "2"
   },
   "devDependencies": {
+    "@types/node": "8",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-vue-app": "^1.2.1",
@@ -64,6 +65,8 @@
     "poi": "^9.3.3",
     "rimraf": "^2.6.1",
     "style-loader": "^0.19.0",
+    "tsconfig-gluons": "^1.0.1",
+    "typescript": "^3.2.2",
     "vue": "^2.5.3",
     "vue-loader": "^13.0.4",
     "vue-template-compiler": "^2.5.3",
