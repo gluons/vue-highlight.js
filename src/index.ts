@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-import HighlightCode from './HighlightCode.vue';
+import HighlightCode from './components/HighlightCode';
 
 import './languages';
 

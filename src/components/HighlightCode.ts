@@ -1,10 +1,9 @@
-<script lang="ts">
 import { StandardPropertiesHyphen } from 'csstype';
 import hljs from 'highlight.js';
 import { CreateElement, VNode } from 'Vue';
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
-import { escape, getSlotText, indentCode } from './lib/';
+import { escape, getSlotText, indentCode } from '../lib';
 
 const inlineStyles: StandardPropertiesHyphen = {
 	display: 'inline !important',
@@ -35,7 +34,7 @@ export default class HighlightCode extends Vue {
 			code = indentCode(code);
 		}
 
-		let highlightedCode;
+		let highlightedCode: string;
 		if (auto) {
 			({ language: lang, value: highlightedCode } = hljs.highlightAuto(code));
 		} else {
@@ -46,7 +45,7 @@ export default class HighlightCode extends Vue {
 			!inline ? 'pre' : 'span',
 			[
 				h('code', {
-					'class': [
+					class: [
 						'hljs',
 						...(lang ? [lang] : [])
 					],
@@ -59,4 +58,3 @@ export default class HighlightCode extends Vue {
 		);
 	}
 }
-</script>
