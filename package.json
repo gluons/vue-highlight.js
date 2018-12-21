@@ -60,6 +60,7 @@
   },
   "dependencies": {
     "detect-indent": "^5.0.0",
+    "evl": "^1.0.1",
     "redent": "^2.0.0"
   }
 }

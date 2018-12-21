@@ -1,6 +1,6 @@
 import { StandardPropertiesHyphen } from 'csstype';
-import hljs from 'highlight.js';
-import { CreateElement, VNode } from 'Vue';
+import hljs from 'highlight.js/lib/highlight';
+import { CreateElement, VNode } from 'vue';
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 import { escape, getSlotText, indentCode } from '../lib';

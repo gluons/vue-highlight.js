@@ -7,7 +7,12 @@ import App from './App.vue';
 
 import 'highlight.js/styles/agate.css';
 
-Vue.use(VueHighlightJS);
+Vue.use(VueHighlightJS, {
+	languages: [
+		'javascript',
+		'vue'
+	]
+});
 
 new Vue({
 	el: '#app',

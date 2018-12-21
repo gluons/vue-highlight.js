@@ -1,5 +1,5 @@
-import hljs from 'highlight.js/lib/highlight';
+import xmlLang from 'highlight.js/lib/languages/xml';
 
-export default function () {
-	return hljs.getLanguage('xml');
-}
+const vue = xmlLang;
+
+export default vue;
