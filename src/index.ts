@@ -4,6 +4,8 @@ import HighlightCode from './components/HighlightCode';
 import { registerLanguage } from './lib';
 import { HLJSLang } from './types';
 
+export { HLJSLang };
+
 /**
  * Vue Highlight.js options.
  *
