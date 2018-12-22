@@ -6,6 +6,7 @@
   "module": "./dist/vue-highlight.es.js",
   "unpkg": "./dist/vue-highlight.web.min.js",
   "jsdelivr": "./dist/vue-highlight.web.min.js",
+  "typings": "./dist/index.d.ts",
   "files": [
     "dist",
     "lib"
