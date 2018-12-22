@@ -1,7 +1,8 @@
 import Vue, { PluginFunction, PluginObject } from 'vue';
 
 import HighlightCode from './components/HighlightCode';
-import { requireLanguage } from './lib';
+import { registerLanguage } from './lib';
+import { HLJSLang } from './types';
 
 /**
  * Vue Highlight.js options.
@@ -13,10 +14,10 @@ export interface Options {
 	/**
 	 * Highlight.js languages
 	 *
-	 * @type {string[]}
+	 * @type {Record<string, HLJSLang>}
 	 * @memberof Options
 	 */
-	languages?: string[];
+	languages?: Record<string, HLJSLang>;
 }
 
 /**
@@ -27,19 +28,25 @@ export interface Options {
  */
 const install: PluginFunction<Options> = (
 	vue: typeof Vue,
-	options: Options = {
-		languages: ['javascript']
-	}
+	options: Options = { languages: {} }
 ): void => {
 	const { languages } = options;
 
-	languages.forEach(language => {
-		requireLanguage(language);
-	});
+	// Register Highlight.js languages
+	for (const languageName in languages) {
+		if (!Object.prototype.hasOwnProperty.call(languages, languageName)) {
+			continue;
+		}
+
+		const language = languages[languageName];
+		registerLanguage(languageName, language);
+	}
+
+	// Register components
 	vue.component('highlight-code', HighlightCode);
 };
 
-if ((typeof window !== 'undefined') && window.Vue) {
+if (typeof window !== 'undefined' && window.Vue) {
 	install(window.Vue);
 }
 
