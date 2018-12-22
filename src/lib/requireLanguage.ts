@@ -1,4 +1,3 @@
-import evl from 'evl';
 import hljs from 'highlight.js/lib/highlight';
 
 /**
@@ -8,10 +7,17 @@ import hljs from 'highlight.js/lib/highlight';
  * @param {string} lang Highlight.js language
  */
 export default function requireLanguage(lang: string): void {
-	const hljsLang = evl(
-		() => require(`highlight.js/lib/languages/${lang}`),
-		() => require(`../languages/${lang}`).default
-	);
+	if (lang === 'vue') {
+		hljs.registerLanguage(
+			lang,
+			require('highlight.js/lib/languages/xml')
+		);
 
-	hljs.registerLanguage(lang, hljsLang);
+		return;
+	}
+
+	hljs.registerLanguage(
+		lang,
+		require(`highlight.js/lib/languages/${lang}`)
+	);
 }
