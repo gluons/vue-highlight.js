@@ -1,3 +1,4 @@
+import javascript from 'highlight.js/lib/languages/javascript';
 import Vue, { PluginFunction, PluginObject } from 'vue';
 
 import HighlightCode from './components/HighlightCode';
@@ -26,11 +27,15 @@ export interface Options {
  * Install Vue Highlight.js as plugin.
  *
  * @param {typeof Vue} vue Vue
- * @param {Options} [options={languages: ['javascript']}] Options
+ * @param {Options} [options={ languages: {} }] Options
  */
 const install: PluginFunction<Options> = (
 	vue: typeof Vue,
-	options: Options = { languages: {} }
+	options: Options = {
+		languages: {
+			javascript
+		}
+	}
 ): void => {
 	const { languages } = options;
 
