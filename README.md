@@ -11,35 +11,19 @@
 
 ## ⚙️ Installation
 
-**Via [NPM](https://www.npmjs.com):**
+**Via [npm](https://www.npmjs.com):**
 
-[![NPM](https://nodei.co/npm/vue-highlight.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/vue-highlight.js)
+[![npm](https://nodei.co/npm/vue-highlight.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/vue-highlight.js)
 
-1. Install [**highlight.js**](https://github.com/isagalaev/highlight.js):
-
-   ```bash
-   npm install highlight.js
-   ```
-
-2. Install **Vue Highlight.js**:
-
-   ```bash
-   npm install vue-highlight.js
-   ```
+```bash
+npm install highlight.js vue-highlight.js
+```
 
 **Or [Yarn](https://yarnpkg.com):**
 
-1. Install [**highlight.js**](https://github.com/isagalaev/highlight.js):
-
-   ```bash
-   yarn add highlight.js
-   ```
-
-2. Install **Vue Highlight.js**:
-
-   ```bash
-   yarn add vue-highlight.js
-   ```
+```bash
+yarn add highlight.js vue-highlight.js
+```
 
 ## 🎬 Demo
 
@@ -52,12 +36,22 @@ Go to https://gluons.github.io/vue-highlight.js
 ```javascript
 import Vue from 'vue';
 import VueHighlightJS from 'vue-highlight.js';
+
+import javascript from 'highlight.js/lib/languages/javascript'; // Highlight.js JavaScript language
+import vue from 'vue-highlight.js/lib/languages/vue'; // Vue language (Same as Highlight.js HTML/XML)
+
 import App from './App';
 
 /*
  * Use Vue Highlight.js
  */
-Vue.use(VueHighlightJS);
+Vue.use(VueHighlightJS, {
+	// Register only languages that you want
+	languages: {
+		javascript,
+		vue
+	}
+});
 
 /*
  * Import Highlight.js theme
@@ -96,6 +90,19 @@ new Vue({
 </style>
 ```
 
+## ⛕ Plugin Options
+
+### `languages`
+**Type:** `{ [langName: string]: HLJSLang }`  
+**Default:** `{ languages: { javascript: require('highlight.js/lib/languages/javascript') } }`
+
+Highlight.js languages.
+
+Add the languages that you want to use here.  
+(See https://github.com/isagalaev/highlight.js#commonjs for more info.)
+
+For Vue, you can `import vue from 'vue-highlight.js/lib/languages/vue';`.
+
 ## 📚 API
 
 ### `<highlight-code>`
@@ -107,18 +114,18 @@ Static code content.
 #### 🔰 Properties
 
 ##### lang
-Type: `String`
+**Type:** `String`
 
 Highlight.js [language](http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html#language-names-and-aliases).
 
 ##### inline
-Type: `Boolean`  
-Default: `false`
+**Type:** `Boolean`  
+**Default:** `false`
 
 Enable **inline** code block when set it to `true`.
 
 ##### code
-Type: `String`
+**Type:** `String`
 
 Code content in code block.  
 
@@ -128,7 +135,7 @@ Code content in code block.
 **Component will ignore [`slot`](https://vuejs.org/v2/guide/components.html#Single-Slot) static content if you use this.**
 
 ##### auto
-Type: `Boolean`
+**Type:** `Boolean`
 
 Enable auto detecting code language.
 
