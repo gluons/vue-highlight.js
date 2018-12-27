@@ -31,22 +31,24 @@ export interface Options {
  */
 const install: PluginFunction<Options> = (
 	vue: typeof Vue,
-	options: Options = {
-		languages: {
-			javascript
-		}
-	}
+	options: Options = { languages: {} }
 ): void => {
-	const { languages } = options;
+	if (!IS_WEB_BUNDLE) {
+		const { languages } = options;
 
-	// Register Highlight.js languages
-	for (const languageName in languages) {
-		if (!Object.prototype.hasOwnProperty.call(languages, languageName)) {
-			continue;
+		if (!languages.javascript) {
+			languages.javascript = javascript;
 		}
 
-		const language = languages[languageName];
-		registerLanguage(languageName, language);
+		// Register Highlight.js languages
+		for (const languageName in languages) {
+			if (!Object.prototype.hasOwnProperty.call(languages, languageName)) {
+				continue;
+			}
+
+			const language = languages[languageName];
+			registerLanguage(languageName, language);
+		}
 	}
 
 	// Register components
