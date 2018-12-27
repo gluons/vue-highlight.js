@@ -1,8 +1,7 @@
-import javascript from 'highlight.js/lib/languages/javascript';
 import Vue, { PluginFunction, PluginObject } from 'vue';
 
 import HighlightCode from './components/HighlightCode';
-import { registerLanguage } from './lib';
+import { registerLanguages } from './lib';
 import { HLJSLang } from './types';
 
 export { HLJSLang };
@@ -17,10 +16,10 @@ export interface Options {
 	/**
 	 * Highlight.js languages
 	 *
-	 * @type {Record<string, HLJSLang>}
+	 * @type {string[]}
 	 * @memberof Options
 	 */
-	languages?: Record<string, HLJSLang>;
+	languages?: string[];
 }
 
 /**
@@ -31,28 +30,19 @@ export interface Options {
  */
 const install: PluginFunction<Options> = (
 	vue: typeof Vue,
-	options: Options = { languages: {} }
+	options: Options = { languages: ['javascript'] }
 ): void => {
 	if (!IS_WEB_BUNDLE) {
 		const { languages } = options;
 
-		if (!languages.javascript) {
-			languages.javascript = javascript;
-		}
+		vue.component('highlight-code', async () => {
+			await registerLanguages(languages);
 
-		// Register Highlight.js languages
-		for (const languageName in languages) {
-			if (!Object.prototype.hasOwnProperty.call(languages, languageName)) {
-				continue;
-			}
-
-			const language = languages[languageName];
-			registerLanguage(languageName, language);
-		}
+			return HighlightCode;
+		});
+	} else {
+		vue.component('highlight-code', HighlightCode);
 	}
-
-	// Register components
-	vue.component('highlight-code', HighlightCode);
 };
 
 if (typeof window !== 'undefined' && window.Vue) {

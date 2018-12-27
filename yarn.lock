@@ -187,10 +187,10 @@
     webpack-dev-server "^3.1.10"
     webpackbar "^3.1.4"
 
-"@gluons/vue-up@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@gluons/vue-up/-/vue-up-0.3.1.tgz#779849a4f7f81b769cb65c62a613cc92e67b03f6"
-  integrity sha512-YX0HVBsMi25FKTTNSdnDEliHwiHvgWNZnaWD7DGYy8CjXOgd0TkvolGcCOpFpxvf+E2VAwFjAP+UhfodAIE5yg==
+"@gluons/vue-up@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@gluons/vue-up/-/vue-up-0.3.2.tgz#b667479bd873abae3400f29e7d3604574cf2de63"
+  integrity sha512-4ElRIY54YuZi+u6JdhZuiU9FT7zKr7KI1WNfMbu05UjdS1+oT2Dmwgubg6+CQ8ttpstGUQUkvCCM9z5BaHBirg==
   dependencies:
     "@babel/core" "^7.2.2"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
