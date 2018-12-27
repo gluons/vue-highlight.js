@@ -187,10 +187,10 @@
     webpack-dev-server "^3.1.10"
     webpackbar "^3.1.4"
 
-"@gluons/vue-up@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@gluons/vue-up/-/vue-up-0.1.3.tgz#5f27b19e8e795dafadc689c343f8344d90cb44b3"
-  integrity sha512-VACkfa5TEx0xWvXNIx3TzVe855aJd6t8F5Q83eMOkGdvNss6yg2rMpMQsGUotYHAuZFrXEYoQDEz4c5/WhIpRg==
+"@gluons/vue-up@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@gluons/vue-up/-/vue-up-0.2.0.tgz#9604c8f8b069ad5f29319ed094bfe22806998b36"
+  integrity sha512-SPxbAM1k9n8+JOF4pUxn9Z8SaTln3bwclRaHVBn9ajCy6W6pAmHj+f9uYZr60f4rx5FyinEfhwNXbnNsGsuh6w==
   dependencies:
     "@babel/core" "^7.2.2"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
@@ -212,7 +212,7 @@
     ow "^0.8.0"
     postcss "^7.0.7"
     pug "^2.0.3"
-    rollup "^0.68.1"
+    rollup "^0.68.2"
     rollup-plugin-babel-minify "^6.2.0"
     rollup-plugin-commonjs "^9.2.0"
     rollup-plugin-node-resolve "^4.0.0"
@@ -2026,10 +2026,10 @@ csso@^3.5.0:
   dependencies:
     css-tree "1.0.0-alpha.29"
 
-csstype@^2.5.8:
-  version "2.5.8"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.8.tgz#4ce5aa16ea0d562ef9105fa3ae2676f199586a35"
-  integrity sha512-r4DbsyNJ7slwBSKoGesxDubRWJ71ghG8W2+1HcsDlAo12KGca9dDLv0u98tfdFw7ldBdoA7XmCnI6Q8LpAJXaQ==
+csstype@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.0.tgz#6cf7b2fa7fc32aab3d746802c244d4eda71371a2"
+  integrity sha512-by8hi8BlLbowQq0qtkx54d9aN73R9oUW20HISpka5kmgsR9F7nnxgfsemuR2sdCKZh+CDNf5egW9UZMm4mgJRg==
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -6152,10 +6152,10 @@ rollup-pluginutils@2.3.3, rollup-pluginutils@^2.0.1, rollup-pluginutils@^2.3.3:
     estree-walker "^0.5.2"
     micromatch "^2.3.11"
 
-rollup@^0.68.1:
-  version "0.68.1"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.68.1.tgz#40d03872d3b05848fb023b12ebf7c6d69cab84c5"
-  integrity sha512-8DNKos2p/B7gDoxI42kyIHHX8d+Zt+bwhjUgXnTqnSP+CSPkRNNIQyHIcTqeGdYWR70qG6c1DaRcrjWAiG6Akg==
+rollup@^0.68.2:
+  version "0.68.2"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.68.2.tgz#c26afb5d981ca7a1a32f76087dbde9dad4fcc653"
+  integrity sha512-WgjNCXYv7ZbtStIap1+tz4pd2zwz0XYN//OILwEY6dINIFLVizK1iWdu+ZtUURL/OKnp8Lv2w8FBds8YihzX7Q==
   dependencies:
     "@types/estree" "0.0.39"
     "@types/node" "*"
