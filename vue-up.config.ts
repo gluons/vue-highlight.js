@@ -8,7 +8,12 @@ const config: Configuration = {
 	externals: {
 		module: nodeExternals({
 			extra: [/^highlight\.js/]
-		})
+		}),
+		web: ['highlight.js', 'highlight.js/lib/highlight']
+	},
+	globals: {
+		'highlight.js': 'hljs',
+		'highlight.js/lib/highlight': 'hljs'
 	},
 	dev: {
 		entry: resolve(__dirname, './dev/main.ts'),
