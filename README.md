@@ -90,10 +90,10 @@ new Vue({
 **Type:** `string[]`  
 **Default:** `['javascript']`
 
-Highlight.js languages.
+Highlight.js languages. (Plus `'vue'`)
 
 Add the languages that you want to use here.  
-(See https://github.com/isagalaev/highlight.js#commonjs for more info.)
+(See https://github.com/isagalaev/highlight.js#commonjs about languages to use.)
 
 ## 📚 API
 
