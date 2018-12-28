@@ -2498,11 +2498,6 @@ eventsource@^1.0.7:
   dependencies:
     original "^1.0.0"
 
-evl@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/evl/-/evl-1.0.1.tgz#dd703bb483fd722e39458a26565d8dcc1e090163"
-  integrity sha1-3XA7tIP9ci45RYomVl2NzB4JAWM=
-
 evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/evp_bytestokey/-/evp_bytestokey-1.0.3.tgz#7fcbdb198dc71959432efe13842684e0525acb02"
