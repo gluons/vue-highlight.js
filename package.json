@@ -12,10 +12,11 @@
     "lib"
   ],
   "scripts": {
+    "prepublishOnly": "npm test && npm run build",
     "dev": "vue-up dev",
     "build": "vue-up build",
     "lint": "tslint -p .",
-    "prepublishOnly": "npm test && npm run build",
+    "format": "prettier --write \"{src/**,dev/**/*.ts,lib/**}\"",
     "test": "karma start",
     "test:watch": "karma start --no-single-run"
   },

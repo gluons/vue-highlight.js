@@ -9,13 +9,15 @@ import { VNode } from 'vue';
  */
 export default function getSlotText(slot: VNode[]): string {
 	if (Array.isArray(slot)) {
-		return slot.map(node => { // node is VNode
-			if (Array.isArray(node.children) && (node.children.length > 0)) {
-				return getSlotText(node.children);
-			} else {
-				return node.text;
-			}
-		}).join('');
+		return slot
+			.map(node => {
+				if (Array.isArray(node.children) && node.children.length > 0) {
+					return getSlotText(node.children);
+				} else {
+					return node.text;
+				}
+			})
+			.join('');
 	} else {
 		return '';
 	}
