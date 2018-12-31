@@ -47,7 +47,7 @@ import App from './App';
  * Use Vue Highlight.js
  */
 Vue.use(VueHighlightJS, {
-	// Import only languages that you want
+	// Register only languages that you want
 	languages: {
 		javascript,
 		vue
