@@ -41,6 +41,12 @@ import VueHighlightJS from 'vue-highlight.js';
 import javascript from 'highlight.js/lib/languages/javascript';
 import vue from 'vue-highlight.js/lib/languages/vue';
 
+/*
+ * Import Highlight.js theme
+ * Find more: https://highlightjs.org/static/demo/
+ */
+import 'highlight.js/styles/default.css';
+
 import App from './App';
 
 /*
@@ -53,12 +59,6 @@ Vue.use(VueHighlightJS, {
 		vue
 	}
 });
-
-/*
- * Import Highlight.js theme
- * Find more: https://highlightjs.org/static/demo/
- */
-import 'highlight.js/styles/default.css';
 
 new Vue({
 	el: '#app',
