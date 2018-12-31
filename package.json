@@ -12,7 +12,7 @@
     "lib"
   ],
   "scripts": {
-    "prepublishOnly": "npm test && npm run build",
+    "prepublishOnly": "npm run build",
     "dev": "vue-up dev",
     "build": "vue-up build",
     "lint": "tslint -p .",
