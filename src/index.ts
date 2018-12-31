@@ -16,10 +16,10 @@ export interface Options {
 	/**
 	 * Highlight.js languages
 	 *
-	 * @type {string[]}
+	 * @type {Record<string, HLJSLang>}
 	 * @memberof Options
 	 */
-	languages?: string[];
+	languages?: Record<string, HLJSLang>;
 }
 
 /**
@@ -30,19 +30,12 @@ export interface Options {
  */
 const install: PluginFunction<Options> = (
 	vue: typeof Vue,
-	options: Options = { languages: ['javascript'] }
+	options: Options = { languages: {} }
 ): void => {
-	if (!IS_WEB_BUNDLE) {
-		const { languages } = options;
+	const { languages } = options;
 
-		vue.component('highlight-code', async () => {
-			await registerLanguages(languages);
-
-			return HighlightCode;
-		});
-	} else {
-		vue.component('highlight-code', HighlightCode);
-	}
+	registerLanguages(languages);
+	vue.component('highlight-code', HighlightCode);
 };
 
 if (typeof window !== 'undefined' && window.Vue) {

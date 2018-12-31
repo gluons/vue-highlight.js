@@ -33,9 +33,13 @@ Go to https://gluons.github.io/vue-highlight.js
 
 **Main file:**
 
-```javascript
+```js
 import Vue from 'vue';
 import VueHighlightJS from 'vue-highlight.js';
+
+// Highlight.js languages
+import javascript from 'highlight.js/lib/languages/javascript';
+import vue from 'vue-highlight.js/lib/languages/vue';
 
 import App from './App';
 
@@ -44,7 +48,10 @@ import App from './App';
  */
 Vue.use(VueHighlightJS, {
 	// Import only languages that you want
-	languages: ['javascript', 'vue']
+	languages: {
+		javascript,
+		vue
+	}
 });
 
 /*
@@ -87,13 +94,15 @@ new Vue({
 ## ⛕ Plugin Options
 
 ### `languages`
-**Type:** `string[]`  
-**Default:** `['javascript']`
+**Type:** `{ [name: string]: HLJSLang }`  
+**Default:** `{}`
 
-Highlight.js languages. (Plus `'vue'`)
+Highlight.js languages.  
+Add the languages that you want to use here.
 
-Add the languages that you want to use here.  
-(See https://github.com/isagalaev/highlight.js#commonjs about languages to put here.)
+`name` is the name of language to register with **Highlight.js**' [`registerLanguage(name, language)`](https://highlightjs.readthedocs.io/en/latest/api.html#registerlanguage-name-language) API.
+
+_See https://github.com/isagalaev/highlight.js#commonjs about importing each language from **highlight.js**._
 
 ## 📚 API
 
