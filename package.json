@@ -26,7 +26,7 @@
     "cross-env": "^5.2.0",
     "eslint": "^5.11.1",
     "eslint-config-gluons": "^4.1.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "eslint-plugin-vue": "^5.1.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-pug": "^1.0.7",
