@@ -10,7 +10,11 @@ import vue from 'vue-highlight.js/lib/languages/vue';
 import App from './App';
 import components from './components';
 
+import 'codemirror/mode/javascript/javascript';
+
 // Styles
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/theme/dracula.css';
 import 'highlight.js/styles/monokai.css';
 import 'vue-github-buttons/dist/vue-github-buttons.css';
 import 'vue-gh-corners/dist/vue-github-corners.css';
