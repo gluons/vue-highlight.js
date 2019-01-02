@@ -1,0 +1,6 @@
+{
+	"extends": "tslint-config-gluons",
+	"rules": {
+		"object-literal-key-quotes": [true, "as-needed"]
+	}
+}

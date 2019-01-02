@@ -1,6 +1,0 @@
-{
-	"env": {
-		"jasmine": true
-	},
-	"extends": "gluons/vue"
-}

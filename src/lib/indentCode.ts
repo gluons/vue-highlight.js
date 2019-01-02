@@ -1,5 +1,5 @@
-import * as detectIndent from 'detect-indent';
-import * as redent from 'redent';
+import detectIndent from 'detect-indent';
+import redent from 'redent';
 
 /**
  * Indent code.
@@ -8,7 +8,7 @@ import * as redent from 'redent';
  * @param {string} code Code.
  * @returns {string}
  */
-export default function indentCode(code) {
+export default function indentCode(code: string): string {
 	if (typeof code === 'string') {
 		let indent = detectIndent(code).indent || '\t';
 		code = redent(code, 0, indent);
