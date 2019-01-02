@@ -70,6 +70,9 @@
     "tslib": "^1.9.3"
   },
   "jest": {
-    "preset": "ts-jest"
+    "preset": "ts-jest",
+    "globals": {
+      "IS_WEB_BUNDLE": false
+    }
   }
 }
