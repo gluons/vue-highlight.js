@@ -22,7 +22,7 @@ import Usage from './home/Usage.vue';
 import Demo from './home/Demo.vue';
 
 export default {
-	name: 'home',
+	name: 'Home',
 	components: {
 		Usage,
 		Demo

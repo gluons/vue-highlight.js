@@ -53,7 +53,7 @@ const vueFileContent = `
 /* eslint-enable no-useless-escape */
 
 export default {
-	name: 'usage',
+	name: 'Usage',
 	data() {
 		return {
 			vueFileContent

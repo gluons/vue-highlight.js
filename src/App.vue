@@ -8,7 +8,7 @@
 import * as views from './views';
 
 export default {
-	name: 'app',
+	name: 'App',
 	components: {
 		...views
 	}

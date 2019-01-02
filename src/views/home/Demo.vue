@@ -21,7 +21,7 @@ var app = new Vue({
 `.trim();
 
 export default {
-	name: 'demo',
+	name: 'Demo',
 	data() {
 		return {
 			code: defaultCode,

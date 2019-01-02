@@ -4,7 +4,7 @@ span.v-char V
 
 <script>
 export default {
-	name: 'v'
+	name: 'V'
 };
 </script>
 
