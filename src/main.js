@@ -4,6 +4,7 @@ import VueGitHubButtons from 'vue-github-buttons';
 import VueGitHubCorners from 'vue-gh-corners';
 import VueCodeMirror from 'vue-codemirror';
 
+import css from 'highlight.js/lib/languages/css';
 import javascript from 'highlight.js/lib/languages/javascript';
 import vue from 'vue-highlight.js/lib/languages/vue';
 
@@ -25,6 +26,7 @@ Vue.config.productionTip = false;
 // Plugins
 Vue.use(VueHighlightJS, {
 	languages: {
+		css,
 		javascript,
 		vue
 	}
