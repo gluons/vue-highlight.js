@@ -10,27 +10,27 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "highlight.js": "^9.12.0",
-    "vue": "^2.5.21",
+    "highlight.js": "^9.13.1",
+    "vue": "^2.5.22",
     "vue-codemirror": "^4.0.6",
     "vue-gh-corners": "^2.0.0",
     "vue-github-buttons": "^2.0.5",
     "vue-highlight.js": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.2.2",
-    "@vue/cli-plugin-eslint": "^3.2.2",
-    "@vue/cli-service": "^3.2.2",
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-eslint": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
     "babel-eslint": "^10.0.1",
     "browserslist-config-vue": "^1.0.3",
     "cross-env": "^5.2.0",
-    "eslint": "^5.11.1",
+    "eslint": "^5.12.1",
     "eslint-config-gluons": "^4.1.0",
     "eslint-plugin-vue": "^5.1.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-pug": "^1.0.7",
-    "vue-template-compiler": "^2.5.21",
-    "webpack": "^4.28.3"
+    "vue-template-compiler": "^2.5.22",
+    "webpack": "^4.29.0"
   }
 }
