@@ -181,10 +181,10 @@
     webpack-dev-server "^3.1.14"
     webpackbar "^3.1.5"
 
-"@gluons/vue-up@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.npmjs.org/@gluons/vue-up/-/vue-up-0.4.2.tgz#744fbb728a774bebdee6daae13da764e1ca8e390"
-  integrity sha512-0lrAysfkeaKTYRsRxWO89wBG7ab5Y6vxX5kToQxpaY4p3gaQvP24gNzADo1n3blyKXoWZp/6CDy4fvrYJv5DgQ==
+"@gluons/vue-up@^0.4.3":
+  version "0.4.3"
+  resolved "https://registry.npmjs.org/@gluons/vue-up/-/vue-up-0.4.3.tgz#20bfa1923a6bfe6a8f7c5e0c215439f49be17d94"
+  integrity sha512-m6j/DT6hNgi/O4xuyaTZVNZDjVzwNJKG+1qHxxn1yxtgHaw57ca7cdSBM23TOuSA1UYA38worKcK9DAhdcNipg==
   dependencies:
     "@gluons/rollup-plugin-postcss-only" "^1.2.0"
     "@gluons/vue-pack-dev" "^1.17.0"
@@ -194,7 +194,7 @@
     del "^3.0.0"
     figures "^2.0.0"
     joycon "^2.2.4"
-    joycon-yaml-loader "^2.0.1"
+    joycon-yaml-loader "^2.0.2"
     lodash.isnil "^4.0.0"
     lodash.pick "^4.4.0"
     log-update "^2.3.0"
@@ -204,19 +204,19 @@
     ow "^0.12.0"
     postcss "^7.0.14"
     pug "^2.0.3"
-    rollup "^1.2.1"
+    rollup "^1.4.0"
     rollup-plugin-babel-minify "^7.0.0"
-    rollup-plugin-commonjs "^9.2.0"
-    rollup-plugin-node-resolve "^4.0.0"
+    rollup-plugin-commonjs "^9.2.1"
+    rollup-plugin-node-resolve "^4.0.1"
     rollup-plugin-replace "^2.1.0"
     rollup-plugin-resolve-alias "^0.2.1"
-    rollup-plugin-typescript2 "^0.19.0"
-    rollup-plugin-vue "^4.7.1"
+    rollup-plugin-typescript2 "^0.19.3"
+    rollup-plugin-vue "^4.7.2"
     tslib "^1.9.3"
     validate-npm-package-name "^3.0.0"
-    yargs "^13.0.0"
+    yargs "^13.2.1"
   optionalDependencies:
-    joycon-ts-loader "^3.0.0"
+    joycon-ts-loader "^3.0.1"
 
 "@sindresorhus/slugify@^0.8.0":
   version "0.8.0"
@@ -660,6 +660,11 @@ are-we-there-yet@~1.1.2:
     delegates "^1.0.0"
     readable-stream "^2.0.6"
 
+arg@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npmjs.org/arg/-/arg-4.1.0.tgz#583c518199419e0037abb74062c37f8519e575f0"
+  integrity sha512-ZWc51jO3qegGkVh8Hwpv636EkbesNV5ZNQPCtRa+0qytRYPEs9IYT9qITY9buezqUH5uqyzlWLcufrzU2rffdg==
+
 argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
@@ -746,7 +751,7 @@ array-unique@^0.3.2:
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
   integrity sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=
 
-arrify@^1.0.0, arrify@^1.0.1:
+arrify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
@@ -1457,7 +1462,7 @@ bser@^2.0.0:
   dependencies:
     node-int64 "^0.4.0"
 
-buffer-from@1.x, buffer-from@^1.0.0, buffer-from@^1.1.0:
+buffer-from@1.x, buffer-from@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
   integrity sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
@@ -4689,20 +4694,20 @@ jest@^23.6.0:
     import-local "^1.0.0"
     jest-cli "^23.6.0"
 
-joycon-ts-loader@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/joycon-ts-loader/-/joycon-ts-loader-3.0.0.tgz#73a66cbe84c74d8a29e0d8dd400f9f4cf660ebd6"
-  integrity sha512-iueqo2v+L9qAizF3LZ9LuDFe15mNfZk0g9wBcXIiUgTZYAq3o/LdqWQ1O3ji6EU2NZ0o7NZ3RNv9azrbA3gv2g==
+joycon-ts-loader@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/joycon-ts-loader/-/joycon-ts-loader-3.0.1.tgz#f20d00f0fd26111e23282aeffb8316cea48806a0"
+  integrity sha512-VjqZtJxFloUdNVRTWPP7OmOxFCUPi4xwKtC5D34Bpw+nQJRxpz1VzY4RhAfbip1HDSgBZ+r0ingVpsSpGtiOdA==
   dependencies:
-    ts-node "^7.0.1"
+    ts-node "^8.0.2"
 
-joycon-yaml-loader@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/joycon-yaml-loader/-/joycon-yaml-loader-2.0.1.tgz#88e52856f45c7ddd59be367ac9579f0f24e535de"
-  integrity sha512-PNPAw7qxchvz9IWOzQARkVyXSsK3r2IIOPXxT4eyI4GONsWygtlnJHXWIU2dFbuHpWeLUxZ6kchFbQ7kWqJSPQ==
+joycon-yaml-loader@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/joycon-yaml-loader/-/joycon-yaml-loader-2.0.2.tgz#5473fe489ba236c4735716e83e889fc12c902262"
+  integrity sha512-lS02t97g0+/boaYFdSoSXO3Z33MylcIIlXC6+u90wpJc/iSsl80n/PO2V83LDxl25mSIE2t3f2P/WpU71JCKbA==
   dependencies:
-    js-yaml "^3.12.0"
-    pify "^4.0.0"
+    js-yaml "^3.12.2"
+    pify "^4.0.1"
 
 joycon@^2.2.4:
   version "2.2.4"
@@ -4733,6 +4738,14 @@ js-yaml@^3.12.0, js-yaml@^3.7.0, js-yaml@^3.9.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1"
   integrity sha512-PIt2cnwmPfL4hKNwqeiuz4bKfnzHTBv6HyVgjahA6mPLwPDzjDWrplJBMjHUFxku/N3FlmrbyPclad+I+4mJ3A==
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
+js-yaml@^3.12.2:
+  version "3.12.2"
+  resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.12.2.tgz#ef1d067c5a9d9cb65bd72f285b5d8105c77f14fc"
+  integrity sha512-QHn/Lh/7HhZ/Twc7vJYQTkjuCa0kaCcDcjK5Zlk2rvnUpy7DxMJ23+Jc2dcyvltwQVg1nygAVlB2oRDFHoRS5Q==
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
@@ -6202,7 +6215,7 @@ pify@^3.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
   integrity sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
 
-pify@^4.0.0, pify@^4.0.1:
+pify@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
@@ -7261,7 +7274,7 @@ resolve@1.1.7:
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
   integrity sha1-IDEU2CrSxe2ejgQRs5ModeiJ6Xs=
 
-resolve@1.8.1, resolve@^1.1.6, resolve@^1.1.7, resolve@^1.3.2, resolve@^1.8.1:
+resolve@1.8.1, resolve@^1.1.6, resolve@^1.1.7, resolve@^1.3.2:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.8.1.tgz#82f1ec19a423ac1fbd080b0bab06ba36e84a7a26"
   integrity sha512-AicPrAC7Qu1JxPCZ9ZgCZlY35QgFnNqc+0LtbRNxnVw4TXvjQ72wnuL9JQcEBgXkI9JM8MsT9kaQoHcpCRJOYA==
@@ -7272,6 +7285,13 @@ resolve@1.x:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.9.0.tgz#a14c6fdfa8f92a7df1d996cb7105fa744658ea06"
   integrity sha512-TZNye00tI67lwYvzxCxHGjwTNlUV70io54/Ed4j6PscB8xVfuBJpRenI/o6dVk0cY0PYTY27AgCoGGxRnYuItQ==
+  dependencies:
+    path-parse "^1.0.6"
+
+resolve@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.npmjs.org/resolve/-/resolve-1.10.0.tgz#3bdaaeaf45cc07f375656dfd2e54ed0810b101ba"
+  integrity sha512-3sUr9aq5OfSg2S9pNtPA9hL1FVEAjvfOC4leW0SNf/mpnaakz2a9femSd6LqAww2RaFctwyf1lCqnTHuF1rxDg==
   dependencies:
     path-parse "^1.0.6"
 
@@ -7331,24 +7351,24 @@ rollup-plugin-babel-minify@^7.0.0:
     babel-preset-minify "^0.5.0"
     sourcemap-codec "^1.4.3"
 
-rollup-plugin-commonjs@^9.2.0:
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-commonjs/-/rollup-plugin-commonjs-9.2.0.tgz#4604e25069e0c78a09e08faa95dc32dec27f7c89"
-  integrity sha512-0RM5U4Vd6iHjL6rLvr3lKBwnPsaVml+qxOGaaNUWN1lSq6S33KhITOfHmvxV3z2vy9Mk4t0g4rNlVaJJsNQPWA==
+rollup-plugin-commonjs@^9.2.1:
+  version "9.2.1"
+  resolved "https://registry.npmjs.org/rollup-plugin-commonjs/-/rollup-plugin-commonjs-9.2.1.tgz#bb151ca8fa23600c7a03e25f9f0a45b1ee922dac"
+  integrity sha512-X0A/Cp/t+zbONFinBhiTZrfuUaVwRIp4xsbKq/2ohA2CDULa/7ONSJTelqxon+Vds2R2t2qJTqJQucKUC8GKkw==
   dependencies:
     estree-walker "^0.5.2"
     magic-string "^0.25.1"
-    resolve "^1.8.1"
+    resolve "^1.10.0"
     rollup-pluginutils "^2.3.3"
 
-rollup-plugin-node-resolve@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-node-resolve/-/rollup-plugin-node-resolve-4.0.0.tgz#9bc6b8205e9936cc0e26bba2415f1ecf1e64d9b2"
-  integrity sha512-7Ni+/M5RPSUBfUaP9alwYQiIKnKeXCOHiqBpKUl9kwp3jX5ZJtgXAait1cne6pGEVUUztPD6skIKH9Kq9sNtfw==
+rollup-plugin-node-resolve@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/rollup-plugin-node-resolve/-/rollup-plugin-node-resolve-4.0.1.tgz#f95765d174e5daeef9ea6268566141f53aa9d422"
+  integrity sha512-fSS7YDuCe0gYqKsr5OvxMloeZYUSgN43Ypi1WeRZzQcWtHgFayV5tUSPYpxuaioIIWaBXl6NrVk0T2/sKwueLg==
   dependencies:
     builtin-modules "^3.0.0"
     is-module "^1.0.0"
-    resolve "^1.8.1"
+    resolve "^1.10.0"
 
 rollup-plugin-replace@^2.1.0:
   version "2.1.0"
@@ -7364,7 +7384,7 @@ rollup-plugin-resolve-alias@^0.2.1:
   resolved "https://registry.yarnpkg.com/rollup-plugin-resolve-alias/-/rollup-plugin-resolve-alias-0.2.1.tgz#16a3506596b115f9ea4053bc71019f472be805cc"
   integrity sha512-tDcCfu6bjaeE6OthrxRpkgtqRKJGTQmyL9XAYR6agyQXLVfkG/zWGiBRhK5cVzLbCmzbSpGUUAtGao6MZ7wnBA==
 
-rollup-plugin-typescript2@^0.19.0:
+rollup-plugin-typescript2@^0.19.3:
   version "0.19.3"
   resolved "https://registry.npmjs.org/rollup-plugin-typescript2/-/rollup-plugin-typescript2-0.19.3.tgz#713063233461765f030a2baa2640905c2656164f"
   integrity sha512-lsRqfBCZhMl/tq9AT5YnQvzQWzXtnx3EQYFcHD72gul7nyyoOrzx5yCEH20smpw58v6UkHHZz03FbdLEPoHWjA==
@@ -7374,7 +7394,7 @@ rollup-plugin-typescript2@^0.19.0:
     rollup-pluginutils "2.3.3"
     tslib "1.9.3"
 
-rollup-plugin-vue@^4.7.1:
+rollup-plugin-vue@^4.7.2:
   version "4.7.2"
   resolved "https://registry.npmjs.org/rollup-plugin-vue/-/rollup-plugin-vue-4.7.2.tgz#463a49815def829d4d731e2227f9ffaebb9bb517"
   integrity sha512-RuAK+YTL81/iccOWoadqQz2TXqOogivjbvtCuU6EfVP9/E5XIjuMNVsVWHkSelZQblI1z2b5tshWL7XoiOfABQ==
@@ -7397,7 +7417,7 @@ rollup-pluginutils@2.3.3, rollup-pluginutils@^2.0.1, rollup-pluginutils@^2.3.3:
     estree-walker "^0.5.2"
     micromatch "^2.3.11"
 
-rollup@^1.2.1:
+rollup@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/rollup/-/rollup-1.4.0.tgz#fdc965b4ea7948e0b8e1a9051067dce1a61b3a24"
   integrity sha512-E5HP4rgvAqkXQNYfNHgCDnX5HDHwAPDLUVSNp8iTmT49vY34G0DxEfhjPWnqnFi7v0vQtDGkKl2hvLfmsMvmcA==
@@ -8360,19 +8380,16 @@ ts-loader@^5.3.3:
     micromatch "^3.1.4"
     semver "^5.0.1"
 
-ts-node@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-7.0.1.tgz#9562dc2d1e6d248d24bc55f773e3f614337d9baf"
-  integrity sha512-BVwVbPJRspzNh2yfslyT1PSbl5uIk03EZlb493RKHN4qej/D06n1cEhjlOJG69oFsE7OT8XjpTUcYf6pKTLMhw==
+ts-node@^8.0.2:
+  version "8.0.2"
+  resolved "https://registry.npmjs.org/ts-node/-/ts-node-8.0.2.tgz#9ecdf8d782a0ca4c80d1d641cbb236af4ac1b756"
+  integrity sha512-MosTrinKmaAcWgO8tqMjMJB22h+sp3Rd1i4fdoWY4mhBDekOwIAKI/bzmRi7IcbCmjquccYg2gcF6NBkLgr0Tw==
   dependencies:
-    arrify "^1.0.0"
-    buffer-from "^1.1.0"
+    arg "^4.1.0"
     diff "^3.1.0"
     make-error "^1.1.1"
-    minimist "^1.2.0"
-    mkdirp "^0.5.1"
     source-map-support "^0.5.6"
-    yn "^2.0.0"
+    yn "^3.0.0"
 
 tsconfig-gluons@^1.0.1:
   version "1.0.1"
@@ -8714,10 +8731,10 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-template-compiler@^2.6.7:
-  version "2.6.7"
-  resolved "https://registry.npmjs.org/vue-template-compiler/-/vue-template-compiler-2.6.7.tgz#7f6c14eacf3c912d28d33b029cde706d9756e00c"
-  integrity sha512-ZjxJLr6Lw2gj6aQGKwBWTxVNNd28/qggIdwvr5ushrUHUvqgbHD0xusOVP2yRxT4pX3wRIJ2LfxjgFT41dEtoQ==
+vue-template-compiler@^2.6.8:
+  version "2.6.8"
+  resolved "https://registry.npmjs.org/vue-template-compiler/-/vue-template-compiler-2.6.8.tgz#750802604595134775b9c53141b9850b35255e1c"
+  integrity sha512-SwWKANE5ee+oJg+dEJmsdxsxWYICPsNwk68+1AFjOS8l0O/Yz2845afuJtFqf3UjS/vXG7ECsPeHHEAD65Cjng==
   dependencies:
     de-indent "^1.0.2"
     he "^1.1.0"
@@ -8732,10 +8749,10 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^2.6.7:
-  version "2.6.7"
-  resolved "https://registry.npmjs.org/vue/-/vue-2.6.7.tgz#254f188e7621d2d19ee28d0c0442c6d21b53ae2d"
-  integrity sha512-g7ADfQ82QU+j6F/bVDioVQf2ccIMYLuR4E8ev+RsDBlmwRkhGO3HhgF4PF9vpwjdPpxyb1zzLur2nQ2oIMAMEg==
+vue@^2.6.8:
+  version "2.6.8"
+  resolved "https://registry.npmjs.org/vue/-/vue-2.6.8.tgz#f21cbc536bfc14f7d1d792a137bb12f69e60ea91"
+  integrity sha512-+vp9lEC2Kt3yom673pzg1J7T1NVGuGzO9j8Wxno+rQN2WYVBX2pyo/RGQ3fXCLh2Pk76Skw/laAPCuBuEQ4diw==
 
 w3c-hr-time@^1.0.1:
   version "1.0.1"
@@ -9134,7 +9151,7 @@ yargs@^11.0.0:
     y18n "^3.2.1"
     yargs-parser "^9.0.2"
 
-yargs@^13.0.0:
+yargs@^13.2.1:
   version "13.2.1"
   resolved "https://registry.npmjs.org/yargs/-/yargs-13.2.1.tgz#c8888bcf24424bd4e5a834348366f6fcc37bb8d9"
   integrity sha512-HgY0xHGmPPakg6kEDufqxZuXVtvPZcipORC8O7S44iEnwsUmP+qnhReHc6d1dyeIZkrPmYFblh45Z2oeDn++fQ==
@@ -9180,7 +9197,7 @@ yargs@~3.10.0:
     decamelize "^1.0.0"
     window-size "0.1.0"
 
-yn@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
-  integrity sha1-5a2ryKz0CPY4X8dklWhMiOavaJo=
+yn@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/yn/-/yn-3.0.0.tgz#0073c6b56e92aed652fbdfd62431f2d6b9a7a091"
+  integrity sha512-+Wo/p5VRfxUgBUGy2j/6KX2mj9AYJWOHuhMjMcbBFc3y54o9/4buK1ksBvuiK01C3kby8DH9lSmJdSxw+4G/2Q==

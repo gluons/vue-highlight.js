@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@gluons/prettier-config": "^2.0.0",
-    "@gluons/vue-up": "^0.4.2",
+    "@gluons/vue-up": "^0.4.3",
     "@types/detect-indent": "^5.0.0",
     "@types/highlight.js": "^9.12.3",
     "@types/jest": "^23.3.10",
@@ -59,10 +59,10 @@
     "tslint": "^5.13.1",
     "tslint-config-gluons": "^2.1.0",
     "typescript": "^3.3.3333",
-    "vue": "^2.6.7",
+    "vue": "^2.6.8",
     "vue-class-component": "^7.0.1",
     "vue-property-decorator": "^7.3.0",
-    "vue-template-compiler": "^2.6.7"
+    "vue-template-compiler": "^2.6.8"
   },
   "dependencies": {
     "detect-indent": "^5.0.0",
