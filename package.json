@@ -19,7 +19,7 @@
     "lib": "tsc -p tsconfig-lib.json",
     "build": "npm run lib && vue-up build",
     "lint": "tslint -p .",
-    "format": "prettier --write \"{src/**,src-lib,dev/**/*.ts}\"",
+    "format": "prettier --write \"{src/**,src-lib/**,dev/**/*.ts}\"",
     "test": "npm run lint && jest"
   },
   "repository": {

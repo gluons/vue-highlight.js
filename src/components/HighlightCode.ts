@@ -38,9 +38,10 @@ export default class HighlightCode extends Vue {
 
 		try {
 			if (auto) {
-				({ language: lang, value: highlightedCode } = hljs.highlightAuto(
-					code
-				));
+				({
+					language: lang,
+					value: highlightedCode
+				} = hljs.highlightAuto(code));
 			} else {
 				highlightedCode = lang
 					? hljs.highlight(lang, code).value
