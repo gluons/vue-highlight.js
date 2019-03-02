@@ -35,14 +35,21 @@ export default class HighlightCode extends Vue {
 		}
 
 		let highlightedCode: string;
-		if (auto) {
-			({ language: lang, value: highlightedCode } = hljs.highlightAuto(
-				code
-			));
-		} else {
-			highlightedCode = lang
-				? hljs.highlight(lang, code).value
-				: escape(code); // If no `lang`, just display plain code.
+
+		try {
+			if (auto) {
+				({ language: lang, value: highlightedCode } = hljs.highlightAuto(
+					code
+				));
+			} else {
+				highlightedCode = lang
+					? hljs.highlight(lang, code).value
+					: escape(code); // If no `lang`, just display plain code.
+			}
+		} catch (err) {
+			highlightedCode = escape(code);
+
+			console.error(err);
 		}
 
 		return h(!inline ? 'pre' : 'span', [
