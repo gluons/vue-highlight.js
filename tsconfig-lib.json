@@ -1,7 +1,6 @@
 {
 	"extends": "tsconfig-gluons",
 	"compilerOptions": {
-		"rootDir": "src-lib",
 		"outDir": "lib",
 		"sourceMap": false
 	},

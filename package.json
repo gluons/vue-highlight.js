@@ -13,12 +13,13 @@
   ],
   "scripts": {
     "prepublishOnly": "npm run build",
+    "predev": "npm run lib",
     "dev": "vue-up dev",
-    "prelib": "rimraf lib/",
+    "prelib": "rimraf lib/*",
     "lib": "tsc -p tsconfig-lib.json",
-    "build": "vue-up build",
+    "build": "npm run lib && vue-up build",
     "lint": "tslint -p .",
-    "format": "prettier --write \"{src/**,dev/**/*.ts,lib/**}\"",
+    "format": "prettier --write \"{src/**,src-lib,dev/**/*.ts}\"",
     "test": "npm run lint && jest"
   },
   "repository": {
