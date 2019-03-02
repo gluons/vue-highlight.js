@@ -127,3 +127,4 @@ $RECYCLE.BIN/
 
 # Dist files
 dist/
+lib/
