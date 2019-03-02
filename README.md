@@ -33,38 +33,72 @@ Go to https://gluons.github.io/vue-highlight.js
 
 **Main file:**
 
-```js
-import Vue from 'vue';
-import VueHighlightJS from 'vue-highlight.js';
+There are 2 ways to import Highlight.js languages.
 
-// Highlight.js languages
-import javascript from 'highlight.js/lib/languages/javascript';
-import vue from 'vue-highlight.js/lib/languages/vue';
+1. Import only languages that you want.
 
-/*
- * Import Highlight.js theme
- * Find more: https://highlightjs.org/static/demo/
- */
-import 'highlight.js/styles/default.css';
+	```js
+	import Vue from 'vue';
+	import VueHighlightJS from 'vue-highlight.js';
 
-import App from './App';
+	// Highlight.js languages (Only required languages)
+	import css from 'highlight.js/lib/languages/css';
+	import javascript from 'highlight.js/lib/languages/javascript';
+	import vue from 'vue-highlight.js/lib/languages/vue';
 
-/*
- * Use Vue Highlight.js
- */
-Vue.use(VueHighlightJS, {
-	// Register only languages that you want
-	languages: {
-		javascript,
-		vue
-	}
-});
+	/*
+	* Import Highlight.js theme
+	* Find more: https://highlightjs.org/static/demo/
+	*/
+	import 'highlight.js/styles/default.css';
 
-new Vue({
-	el: '#app',
-	render: h => h(App)
-});
-```
+	import App from './App';
+
+	/*
+	* Use Vue Highlight.js
+	*/
+	Vue.use(VueHighlightJS, {
+		// Register only languages that you want
+		languages: {
+			css,
+			javascript,
+			vue
+		}
+	});
+
+	new Vue({
+		el: '#app',
+		render: h => h(App)
+	});
+	```
+
+2. Import all languages.
+
+	```js
+	import Vue from 'vue';
+	import VueHighlightJS from 'vue-highlight.js';
+
+	// Highlight.js languages (All languages)
+	import 'vue-highlight.js/lib/allLanguages'
+
+	/*
+	* Import Highlight.js theme
+	* Find more: https://highlightjs.org/static/demo/
+	*/
+	import 'highlight.js/styles/default.css';
+
+	import App from './App';
+
+	/*
+	* Use Vue Highlight.js
+	*/
+	Vue.use(VueHighlightJS);
+
+	new Vue({
+		el: '#app',
+		render: h => h(App)
+	});
+	```
 
 **Vue file:**
 
@@ -142,7 +176,9 @@ Enable auto detecting code language.
 
 > Code will be detected by [highlight.js' `highlightAuto`](https://highlightjs.readthedocs.io/en/latest/api.html#highlightauto-value-languagesubset) function.
 
-**Component will ignore `lang` prop if you use this.**
+**`auto` will work well when you import all Highlight.js languages.**
+
+**Component will ignore `lang` prop if you use `auto`.**
 
 ## ❓ FAQ
 

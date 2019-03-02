@@ -11,6 +11,10 @@ import { HLJSLang } from '../types';
 export default function registerLanguages(
 	languages: Record<string, HLJSLang>
 ): void {
+	if (typeof languages !== 'object') {
+		return;
+	}
+
 	Object.keys(languages).forEach(languageName => {
 		const language = languages[languageName];
 
