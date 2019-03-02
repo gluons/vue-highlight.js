@@ -176,7 +176,9 @@ Enable auto detecting code language.
 
 > Code will be detected by [highlight.js' `highlightAuto`](https://highlightjs.readthedocs.io/en/latest/api.html#highlightauto-value-languagesubset) function.
 
-**Component will ignore `lang` prop if you use this.**
+**`auto` will work well when you import all Highlight.js languages.**
+
+**Component will ignore `lang` prop if you use `auto`.**
 
 ## ❓ FAQ
 
