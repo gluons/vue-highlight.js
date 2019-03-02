@@ -3,6 +3,7 @@
 import Vue from 'vue';
 import VueHighlightJS, { Options } from '../src';
 
+import css from 'highlight.js/lib/languages/css';
 import javascript from 'highlight.js/lib/languages/javascript';
 import vue from '../lib/languages/vue';
 
@@ -12,6 +13,7 @@ import 'highlight.js/styles/agate.css';
 
 Vue.use<Options>(VueHighlightJS, {
 	languages: {
+		css,
 		javascript,
 		vue
 	}
