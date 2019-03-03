@@ -18,7 +18,7 @@ import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/dracula.css';
 import 'highlight.js/styles/monokai.css';
 import 'vue-github-buttons/dist/vue-github-buttons.css';
-import 'vue-gh-corners/dist/vue-github-corners.css';
+import 'vue-gh-corners/dist/vue-github-corners.iife';
 import './scss/main.scss';
 
 Vue.config.productionTip = false;
