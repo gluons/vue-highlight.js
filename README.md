@@ -25,6 +25,16 @@ npm install highlight.js vue-highlight.js
 yarn add highlight.js vue-highlight.js
 ```
 
+---
+
+**For [TypeScript](https://www.typescriptlang.org/), Please install [`@types/highlight.js`](https://www.npmjs.com/package/@types/highlight.js).**
+
+```bash
+npm install --save-dev @types/highlight.js
+# or
+yarn add --dev @types/highlight.js
+```
+
 ## 🎬 Demo
 
 Go to https://gluons.github.io/vue-highlight.js
