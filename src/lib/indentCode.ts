@@ -10,8 +10,11 @@ import redent from 'redent';
  */
 export default function indentCode(code: string): string {
 	if (typeof code === 'string') {
-		let indent = detectIndent(code).indent || '\t';
-		code = redent(code, 0, indent);
+		const indent = detectIndent(code).indent || '\t';
+
+		code = redent(code, 0, {
+			indent
+		});
 
 		return code.trim();
 	} else {
