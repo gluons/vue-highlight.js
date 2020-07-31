@@ -152,9 +152,9 @@
   integrity sha512-9hKVIN2+maygxkngnXDsZXRZqCYDY4pxIRljJqqJ5A+eJZzW3k/NZj5lixEmStjWFjlPlOHGYBytBehpf0l+hA==
 
 "@gluons/prettier-config@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/@gluons/prettier-config/-/prettier-config-2.0.0.tgz#4afa561ccfaee4fdd8b4ed984bcbbd50770207d6"
-  integrity sha512-JFcGcVxJZsRENdmRXzthYSq0lFaWitQ150K3BW0nD7ye5n3hRNmS0tHaO/Sw+lxZTf3YL0i1CNbjI0Gf0Zl0UQ==
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@gluons/prettier-config/-/prettier-config-2.0.6.tgz#21900ed0919b482fbb41032bd0a47bacfdd46938"
+  integrity sha512-qjw+sN8qDL9Yg7B/EsmBow4AE0XbuqKJBwZ62BpibSOQGKfbUhZpGYrmLe9EYFRtVRQdJJiCmpXfDKz+3sesbw==
 
 "@gluons/rollup-plugin-postcss-only@^2.0.0":
   version "2.0.0"
