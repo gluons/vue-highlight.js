@@ -8394,9 +8394,9 @@ tslib@^1.10.0, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
 
 tslint-config-gluons@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/tslint-config-gluons/-/tslint-config-gluons-2.1.0.tgz#9e97b654d4875356df5c304bef1e33e4f3637e94"
-  integrity sha512-LgpXNgcrI/tiGaTw0ztVX4mX6Eut+9u+JMIouN3a4rf8td3BTOaaHwUSzMye2ayO0OZz5HstWE16zMNYTJVamw==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/tslint-config-gluons/-/tslint-config-gluons-2.2.0.tgz#2741f81815d02b84f3d5984a6b15f89b9450bb8a"
+  integrity sha512-Nb2pYC1mbQhrDmdsPrXYH4bRJu/ggGxzbxnIlvyfNVkzbca/mtG15feCfsdNBVKf8xX/+BSJySrArqbYsdjsOA==
 
 tslint@^5.19.0:
   version "5.20.1"
