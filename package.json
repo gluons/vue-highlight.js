@@ -64,7 +64,7 @@
     "typescript": "^3.6.2",
     "vue": "^2.6.10",
     "vue-class-component": "^7.1.0",
-    "vue-property-decorator": "^8.2.2",
+    "vue-property-decorator": "^9.0.0",
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
