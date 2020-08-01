@@ -12,7 +12,7 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ github.token }}
       MERGE_LABELS: dependencies
-      MERGE_COMMIT_MESSAGE: "Automerge pull request #${{ github.event.pull_request.number }}"
+      MERGE_COMMIT_MESSAGE: "🔀 Automerge pull request #${{ github.event.pull_request.number }}"
     name: Dependabot Automerge
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]'
