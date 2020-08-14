@@ -9162,9 +9162,9 @@ ts-node@^8.0.2:
     yn "^3.0.0"
 
 tsconfig-gluons@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/tsconfig-gluons/-/tsconfig-gluons-1.0.1.tgz#b1984ea96ac0666cfeed7ee1662661eaf6ea9ce7"
-  integrity sha512-M4VKQdyFhwMIBy/e0hrkiVfpa/Q0+k6xXa7/9+7BrBDQ54e8OKhRA5WV6ELbtaLCBjFM5lJewAs5EpoS5RysSg==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/tsconfig-gluons/-/tsconfig-gluons-1.1.0.tgz#89408e6188de30d044bc811709aad2fac11f9a67"
+  integrity sha512-WembgDcnOKtI2FKe3zN9cpsDUIDMNPNuRE2DYWaPplZ3Jlu3CU7R3mnctB9JWlpWhdT6XsxlFPTL36w5ZbM1dw==
 
 tslib@1.11.2:
   version "1.11.2"
