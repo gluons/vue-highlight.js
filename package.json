@@ -41,7 +41,7 @@
   },
   "homepage": "https://gluons.github.io/vue-highlight.js/",
   "peerDependencies": {
-    "highlight.js": "^9.11.0",
+    "highlight.js": "^9.18.5",
     "vue": "2"
   },
   "devDependencies": {
