@@ -14,10 +14,10 @@ const inlineStyles: StandardPropertiesHyphen = {
 	name: 'HighlightCode'
 })
 export default class HighlightCode extends Vue {
-	@Prop(String) lang: string;
+	@Prop(String) lang!: string;
 	@Prop({ type: Boolean, default: false }) inline!: boolean;
-	@Prop(String) code: string;
-	@Prop(Boolean) auto: boolean;
+	@Prop(String) code!: string;
+	@Prop(Boolean) auto!: boolean;
 
 	get hasCode(): boolean {
 		return typeof this.code === 'string' && this.code.length > 0;
