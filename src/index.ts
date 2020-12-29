@@ -38,9 +38,7 @@ const install: PluginFunction<Options> = (
 		// Register additional `vue` language from highlight.js `xml` in web bundle
 		const xml = window.hljs.getLanguage('xml');
 
-		if (xml) {
-			window.hljs.registerLanguage('vue', () => xml);
-		}
+		xml && window.hljs.registerLanguage('vue', () => xml);
 	} else {
 		// Register languages from options in non-web bundle
 		languages && registerLanguages(languages);
