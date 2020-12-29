@@ -43,7 +43,7 @@ const install: PluginFunction<Options> = (
 		// Register languages from options in non-web bundle
 		languages && registerLanguages(languages);
 	}
-	vue.component('highlight-code', HighlightCode);
+	vue.component('HighlightCode', HighlightCode);
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
