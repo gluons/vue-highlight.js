@@ -18,7 +18,7 @@
     "prelib": "rimraf lib/*",
     "lib": "tsc -p tsconfig-lib.json",
     "build": "npm run lib && vue-up build",
-    "lint": "tslint -p .",
+    "lint": "eslint .",
     "format": "prettier --write \"{src/**,src-lib/**,dev/**/*.ts}\"",
     "test": "npm run lint && jest"
   },
@@ -52,6 +52,8 @@
     "@types/node": "8",
     "@vue/test-utils": "^1.1.2",
     "csstype": "^3.0.5",
+    "eslint": "^7.16.0",
+    "eslint-config-gluons": "^6.1.0",
     "highlight.js": "^9.15.8",
     "jest": "^26.6.3",
     "npm-run-all": "^4.1.1",
@@ -59,8 +61,6 @@
     "rimraf": "^3.0.0",
     "ts-jest": "^26.4.4",
     "tsconfig-gluons": "^1.1.0",
-    "tslint": "^6.1.3",
-    "tslint-config-gluons": "^2.1.0",
     "typescript": "^4.1.3",
     "vue": "^2.6.10",
     "vue-class-component": "^7.2.6",
@@ -72,6 +72,7 @@
     "redent": "^3.0.0",
     "tslib": "^2.0.3"
   },
+  "prettier": "@gluons/prettier-config",
   "jest": {
     "preset": "ts-jest",
     "globals": {
