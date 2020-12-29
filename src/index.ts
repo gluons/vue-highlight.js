@@ -2,9 +2,9 @@ import Vue, { PluginFunction, PluginObject } from 'vue';
 
 import HighlightCode from './components/HighlightCode';
 import { registerLanguages } from './lib';
-import { HLJSLang } from './types';
+import { LanguageFn } from './types';
 
-export { HLJSLang };
+export { LanguageFn };
 
 /**
  * Vue Highlight.js options.
@@ -16,10 +16,10 @@ export interface Options {
 	/**
 	 * Highlight.js languages
 	 *
-	 * @type {Record<string, HLJSLang>}
+	 * @type {Record<string, LanguageFn>}
 	 * @memberof Options
 	 */
-	languages?: Record<string, HLJSLang>;
+	languages?: Record<string, LanguageFn>;
 }
 
 /**
@@ -38,7 +38,9 @@ const install: PluginFunction<Options> = (
 		// Register additional `vue` language from highlight.js `xml` in web bundle
 		const xml = window.hljs.getLanguage('xml');
 
-		window.hljs.registerLanguage('vue', () => xml);
+		if (xml) {
+			window.hljs.registerLanguage('vue', () => xml);
+		}
 	} else {
 		// Register languages from options in non-web bundle
 		languages && registerLanguages(languages);

@@ -8,10 +8,7 @@ const config: Configuration = {
 	externals: {
 		module: nodeExternals({
 			extra: [/^highlight\.js/],
-			whitelist: [
-				/vue-class-component/,
-				/vue-property-decorator/
-			]
+			whitelist: [/vue-class-component/, /vue-property-decorator/]
 		}),
 		web: ['highlight.js', 'highlight.js/lib/highlight']
 	},

@@ -1,3 +1,3 @@
-import HLJSLang from './HLJSLang';
+import LanguageFn from './LanguageFn';
 
-export { HLJSLang };
+export { LanguageFn };
