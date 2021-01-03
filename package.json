@@ -20,7 +20,7 @@
     "build": "npm run lib && vue-up build",
     "lint": "eslint .",
     "format": "prettier --write \"{src/**,src-lib/**,dev/**/*.ts}\"",
-    "test": "npm run lint && jest"
+    "test": "npm run lib && npm run lint && jest"
   },
   "repository": {
     "type": "git",
