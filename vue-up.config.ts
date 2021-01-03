@@ -10,7 +10,7 @@ const config: Configuration = {
 			extra: [/^highlight\.js/],
 			whitelist: [/vue-class-component/, /vue-property-decorator/]
 		}),
-		web: ['highlight.js', 'highlight.js/lib/highlight']
+		web: ['highlight.js', 'highlight.js/lib/core']
 	},
 	globals: {
 		'highlight.js': 'hljs',
