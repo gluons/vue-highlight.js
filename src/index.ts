@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import Vue, { PluginFunction, PluginObject } from 'vue';
 
 import HighlightCode from './components/HighlightCode';
 import { registerLanguages } from './lib';
 import { LanguageFn } from './types';
+
+import hljsVue from '../lib/languages/vue';
 
 export { LanguageFn };
 
@@ -35,13 +38,13 @@ const install: PluginFunction<Options> = (
 	const { languages } = options;
 
 	if (IS_WEB_BUNDLE) {
-		// Register additional `vue` language from highlight.js `xml` in web bundle
-		const xml = window.hljs.getLanguage('xml');
-
-		xml && window.hljs.registerLanguage('vue', () => xml);
+		window.hljs.registerLanguage('vue', hljsVue);
 	} else {
 		// Register languages from options in non-web bundle
-		languages && registerLanguages(languages);
+		/*
+		 * `Record<string, LanguageFn>` is for fixing build error.
+		 */
+		registerLanguages(languages as Record<string, LanguageFn>);
 	}
 	vue.component('HighlightCode', HighlightCode);
 };
