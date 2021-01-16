@@ -7,6 +7,13 @@
 [![Codacy grade](https://img.shields.io/codacy/grade/3d15a7c11bfe47c69a2aed93cc67cc29.svg?style=flat-square)](https://www.codacy.com/app/gluons/vue-highlight.js)
 [![TSLint](https://img.shields.io/badge/TSLint-gluons-15757B.svg?style=flat-square)](https://github.com/gluons/tslint-config-gluons)
 
+---
+
+> 💡 Version 4 with Highlight.js v10 support is under development.
+> See [version-4](https://github.com/gluons/vue-highlight.js/tree/version-4) branch.
+
+---
+
 📜 [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighter component for [Vue](https://vuejs.org).
 
 ## ⚙️ Installation
