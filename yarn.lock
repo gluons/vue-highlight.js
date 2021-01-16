@@ -377,9 +377,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/eslintrc@npm:^0.2.2":
-  version: 0.2.2
-  resolution: "@eslint/eslintrc@npm:0.2.2"
+"@eslint/eslintrc@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@eslint/eslintrc@npm:0.3.0"
   dependencies:
     ajv: ^6.12.4
     debug: ^4.1.1
@@ -388,10 +388,10 @@ __metadata:
     ignore: ^4.0.6
     import-fresh: ^3.2.1
     js-yaml: ^3.13.1
-    lodash: ^4.17.19
+    lodash: ^4.17.20
     minimatch: ^3.0.4
     strip-json-comments: ^3.1.1
-  checksum: 049c98898934100aa5ad4912242ecbec136454787c00776a236e5321c73176dbc813917445a3d50d230a5a84531a99ec0e2885dd7a6838be68b46b6720fa1459
+  checksum: 00e87c194672eb85dcea22ba749fb3cabdd9768e952e748b2c727940f06691c873369d75cf3bddb239301eca8c38de6e098b0de4839fa7c16a2062e536e8ff5a
   languageName: node
   linkType: hard
 
@@ -969,13 +969,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:26.x, @types/jest@npm:^26.0.19":
+"@types/jest@npm:26.x":
   version: 26.0.19
   resolution: "@types/jest@npm:26.0.19"
   dependencies:
     jest-diff: ^26.0.0
     pretty-format: ^26.0.0
   checksum: 98c8daaf89ca79823461818c1c22d337354e250a135e0314ba1a49e615620c8e2f54c5b900ba8554bf853919c97538f9a38b5af00cea83fd715ee2e6d75e04b8
+  languageName: node
+  linkType: hard
+
+"@types/jest@npm:^26.0.20":
+  version: 26.0.20
+  resolution: "@types/jest@npm:26.0.20"
+  dependencies:
+    jest-diff: ^26.0.0
+    pretty-format: ^26.0.0
+  checksum: 221e39c7c9ce8d71ae4b2ba6abeef1a5b04f1cd96419b9fbbb65534bef4c4215b650561183073dcf47584ff1888d1f4fa7d2af2a38492b7feb9a3bfdcd24c44f
   languageName: node
   linkType: hard
 
@@ -993,10 +1003,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:14":
+"@types/node@npm:*":
   version: 14.14.17
   resolution: "@types/node@npm:14.14.17"
   checksum: 2bb32c683d8446128cf3240b4af6cc884c6ee006a845d1901becadc46255d1263bf265abde5ccb37a09d9a318fc3964d07afc941d52544f2d7f249dbb28d9420
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:14":
+  version: 14.14.21
+  resolution: "@types/node@npm:14.14.21"
+  checksum: b659823ffa01684ff2cb4edf0b70ea76d7eae6cd86af43de62ae6b460c174161850fb75a1be50ab60c4519c14babd4ec430ddbbe6689e341073ba10ff106311c
   languageName: node
   linkType: hard
 
@@ -3607,10 +3624,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.0.5":
-  version: 3.0.5
-  resolution: "csstype@npm:3.0.5"
-  checksum: d15967edea15457961ab1e3f1c4080c83792a595055551a087923b2fb67fffaddaa2eedafe10f665d12dc3f493af03c08322c9410fcd58e3dcf48104de15043c
+"csstype@npm:^3.0.6":
+  version: 3.0.6
+  resolution: "csstype@npm:3.0.6"
+  checksum: ebdca96d26e1af5604658e6876af29ac1e218750efb587684f2b2b13bb062a397b351586d285f911e6985e03112e56c2aee127d35ae7354cc7d25f3000e22556
   languageName: node
   linkType: hard
 
@@ -4473,12 +4490,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.17.0":
-  version: 7.17.0
-  resolution: "eslint@npm:7.17.0"
+"eslint@npm:^7.18.0":
+  version: 7.18.0
+  resolution: "eslint@npm:7.18.0"
   dependencies:
     "@babel/code-frame": ^7.0.0
-    "@eslint/eslintrc": ^0.2.2
+    "@eslint/eslintrc": ^0.3.0
     ajv: ^6.10.0
     chalk: ^4.0.0
     cross-spawn: ^7.0.2
@@ -4502,7 +4519,7 @@ __metadata:
     js-yaml: ^3.13.1
     json-stable-stringify-without-jsonify: ^1.0.1
     levn: ^0.4.1
-    lodash: ^4.17.19
+    lodash: ^4.17.20
     minimatch: ^3.0.4
     natural-compare: ^1.4.0
     optionator: ^0.9.1
@@ -4516,7 +4533,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 12b09a972eb0b81fabf9c1b38b3e9ada0cc051a22ee5022e31852e7babde6fe02a0135be3027451ee02c9ff4a6f738b55205d2953f98eb16a43350ad73070b27
+  checksum: 5c6f6ca0eb6c3738a0d14d3441a23f045ef9e7f73aaba4848aea0877c5fd50ec42937ccdaf53fb9107694f5700a9989bca55334b7b17e5d3be2f6e69a42241fa
   languageName: node
   linkType: hard
 
@@ -12283,6 +12300,13 @@ resolve@1.17.0:
   languageName: node
   linkType: hard
 
+"tslib@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "tslib@npm:2.1.0"
+  checksum: d8f5bdd067611651c6b846c2388f4dc8ba1f5af124e66105f5263d1ad56da17f4b8c6566887ca2f205c5a9758451871ceca87d5d06087af2dca1699c5e33db69
+  languageName: node
+  linkType: hard
+
 "tsutils@npm:^3.17.1":
   version: 3.17.1
   resolution: "tsutils@npm:3.17.1"
@@ -12783,12 +12807,12 @@ typescript@^4.1.3:
   dependencies:
     "@gluons/prettier-config": ^2.0.6
     "@gluons/vue-up": ^0.8.1
-    "@types/jest": ^26.0.19
+    "@types/jest": ^26.0.20
     "@types/node": 14
     "@vue/test-utils": ^1.1.2
-    csstype: ^3.0.5
+    csstype: ^3.0.6
     detect-indent: ^6.0.0
-    eslint: ^7.17.0
+    eslint: ^7.18.0
     eslint-config-gluons: ^6.1.0
     highlight.js: ^10.5.0
     jest: ^26.6.3
@@ -12798,7 +12822,7 @@ typescript@^4.1.3:
     rimraf: ^3.0.2
     ts-jest: ^26.4.4
     tsconfig-gluons: ^1.1.0
-    tslib: ^2.0.3
+    tslib: ^2.1.0
     typescript: ^4.1.3
     vue: ^2.6.12
     vue-class-component: ^7.2.6
