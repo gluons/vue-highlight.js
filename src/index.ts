@@ -35,6 +35,11 @@ const install: PluginFunction<Options> = (
 	vue: typeof Vue,
 	options: Options = { languages: {} }
 ): void => {
+	// Prevent error in Vue 3
+	if (!vue.component) {
+		return;
+	}
+
 	const { languages } = options;
 
 	if (IS_WEB_BUNDLE) {
