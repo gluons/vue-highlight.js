@@ -3,6 +3,6 @@
 /**
  * Language function. (mock-up)
  */
-type LanguageFn = () => any;
+type LanguageFn = (hljs?: any) => any;
 
 export default LanguageFn;
