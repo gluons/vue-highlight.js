@@ -2,6 +2,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
+
+import hljs from 'highlight.js/lib/core';
+import xml from 'highlight.js/lib/languages/xml';
+
+if (!hljs.getLanguage('xml')) {
+	hljs.registerLanguage('xml', xml);
+}
+
 function vue(hljs: any) {
 	const SCRIPT_CLOSE_REGEX = /<\/script>/;
 	const STYLE_CLOSE_REGEX = /<\/style>/;
