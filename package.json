@@ -9,28 +9,30 @@
     "build": "cross-env NODE_ENV=production vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "prettier": "@gluons/prettier-config",
   "dependencies": {
-    "highlight.js": "^9.15.6",
-    "vue": "^2.6.8",
+    "highlight.js": "^10.6.0",
+    "vue": "^2.6.12",
     "vue-codemirror": "^4.0.6",
     "vue-gh-corners": "^3.0.1",
-    "vue-github-buttons": "^3.0.1",
-    "vue-highlight.js": "^3.1.0"
+    "vue-github-buttons": "^3.1.0",
+    "vue-highlight.js": "next"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.1",
-    "@vue/cli-plugin-eslint": "^3.4.1",
-    "@vue/cli-service": "^3.4.1",
-    "babel-eslint": "^10.0.1",
+    "@gluons/prettier-config": "^2.0.6",
+    "@vue/cli-plugin-babel": "^4.5.11",
+    "@vue/cli-plugin-eslint": "^4.5.11",
+    "@vue/cli-service": "^4.5.11",
     "browserslist-config-vue": "^1.0.3",
-    "cross-env": "^5.2.0",
-    "eslint": "^5.15.0",
-    "eslint-config-gluons": "^4.1.0",
-    "eslint-plugin-vue": "^5.2.2",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "vue-cli-plugin-pug": "^1.0.7",
-    "vue-template-compiler": "^2.6.8",
-    "webpack": "^4.29.6"
+    "cross-env": "^7.0.3",
+    "eslint": "^7.21.0",
+    "eslint-config-gluons": "^6.1.0",
+    "eslint-plugin-vue": "^7.6.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8",
+    "sass-loader": "10",
+    "vue-cli-plugin-pug": "^2.0.0",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.24.2"
   }
 }
