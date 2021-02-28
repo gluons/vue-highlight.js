@@ -14,7 +14,7 @@ const config: Configuration = {
 	},
 	globals: {
 		'highlight.js': 'hljs',
-		'highlight.js/lib/highlight': 'hljs'
+		'highlight.js/lib/core': 'hljs'
 	},
 	dev: {
 		entry: resolve(__dirname, './dev/main.ts'),
