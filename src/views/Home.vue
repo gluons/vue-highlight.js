@@ -4,8 +4,8 @@
 		h1 #[v]ue Highlight.js
 		p #[span.emoji 📜] #[a(href="https://highlightjs.org", target="_blank") Highlight.js] syntax highlighter component for #[a(href="https://vuejs.org", target="_blank") Vue].
 		p.repo-buttons-container
-			gh-btns-star(slug='gluons/vue-highlight.js' show-count)
-			gh-btns-fork(slug='gluons/vue-highlight.js' show-count)
+			gh-btns-star(slug='gluons/vue-highlight.js')
+			gh-btns-fork(slug='gluons/vue-highlight.js')
 	hr.divider
 	main
 		usage
@@ -30,14 +30,14 @@ export default {
 };
 </script>
 
-
 <style lang="scss">
 #home {
-	header, footer {
+	header,
+	footer {
 		text-align: center;
 	}
 	footer {
-		font-size: .9em;
+		font-size: 0.9em;
 		margin-top: 3.5em;
 	}
 	main {
