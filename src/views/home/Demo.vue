@@ -9,7 +9,6 @@
 	div(v-else) No Result
 </template>
 
-
 <script>
 const defaultCode = `
 var app = new Vue({
@@ -17,7 +16,7 @@ var app = new Vue({
   data: {
     message: 'Hello Vue!'
   }
-})
+});
 `.trim();
 
 export default {
