@@ -1,7 +1,4 @@
 {
 	"root": true,
-	"extends": "gluons/vue-babel",
-	"rules": {
-		"no-mixed-spaces-and-tabs": "off"
-	}
+	"extends": "gluons/vue"
 }
