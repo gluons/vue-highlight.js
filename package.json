@@ -29,9 +29,10 @@
     "eslint-config-gluons": "^6.1.0",
     "eslint-plugin-vue": "^7.6.0",
     "prettier": "^2.2.1",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
     "sass": "^1.32.8",
     "sass-loader": "10",
-    "vue-cli-plugin-pug": "^2.0.0",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^5.24.2"
   }

@@ -331,12 +331,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.12.13, @babel/parser@npm:^7.13.0, @babel/parser@npm:^7.13.4, @babel/parser@npm:^7.6.0, @babel/parser@npm:^7.9.6":
+"@babel/parser@npm:^7.12.13, @babel/parser@npm:^7.13.0, @babel/parser@npm:^7.13.4":
   version: 7.13.4
   resolution: "@babel/parser@npm:7.13.4"
   bin:
     parser: ./bin/babel-parser.js
   checksum: 3aac62adbd1fd91798751a09b385ed3810acffb7bd637066bea65acf16670fdc8c7c39bab2148c57b4d6606355344de01922c9aba86405c771eaabc58701077a
+  languageName: node
+  linkType: hard
+
+"@babel/parser@npm:^7.6.0, @babel/parser@npm:^7.9.6":
+  version: 7.13.9
+  resolution: "@babel/parser@npm:7.13.9"
+  bin:
+    parser: ./bin/babel-parser.js
+  checksum: de61d40db87a09a2bf230b06cd33121e25a650cf82efb3af7d348e9e5d5ca9426fa76f264eb7c9c5f16a11d17cf66adbe2f807d5a6126c370017ea4ca506fcea
   languageName: node
   linkType: hard
 
@@ -9575,9 +9584,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"pug-code-gen@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "pug-code-gen@npm:3.0.1"
+"pug-code-gen@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "pug-code-gen@npm:3.0.2"
   dependencies:
     constantinople: ^4.0.1
     doctypes: ^1.1.0
@@ -9587,7 +9596,7 @@ fsevents@~2.3.1:
     pug-runtime: ^3.0.0
     void-elements: ^3.1.0
     with: ^7.0.0
-  checksum: 1cd42d5b7d142153f29d6d4393dc0e605325d1b72ee5512f1278644d24c47122077b7c426fc88362ef310641e00a1f52966359e52f98a4a580b53d94ad7d643e
+  checksum: bc122082d1b054c9c206ec5f87ef9dc3c8657c50378b0badaf2cd29e3bec80fe2ca52a7f334f6a657982394dd31db8f16e9e978625aee4979f8c9bc5c4f0e01d
   languageName: node
   linkType: hard
 
@@ -9611,14 +9620,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"pug-lexer@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "pug-lexer@npm:5.0.0"
+"pug-lexer@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "pug-lexer@npm:5.0.1"
   dependencies:
     character-parser: ^2.2.0
     is-expression: ^4.0.0
     pug-error: ^2.0.0
-  checksum: 23bbabdb8de8314695ea198d5739df322fc22a63f1fae73f6f268fcbbffaa457ca6dfa9415962b3e2e800d46df0dd30f3f6db94532899a0e60a984558828db71
+  checksum: 899c780e4145dc299d01301268eaa3113f01b03d088513f96c391d6dc661511e8fe7e05e8fad3471d8155d84c004d4cc858c3aa8cfb882afc98781e568a63ff1
   languageName: node
   linkType: hard
 
@@ -9652,7 +9661,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"pug-plain-loader@npm:^1.0.0":
+"pug-plain-loader@npm:^1.1.0":
   version: 1.1.0
   resolution: "pug-plain-loader@npm:1.1.0"
   dependencies:
@@ -9663,10 +9672,10 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"pug-runtime@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "pug-runtime@npm:3.0.0"
-  checksum: 9069763e1b0710ef4d24cf47790ca378334e690b18cfc9c5d061a399f2ef30d81b0aa13f3137b3d454122092d611e8d56c86958598f6dc4b13c9ae085a5a1bec
+"pug-runtime@npm:^3.0.0, pug-runtime@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "pug-runtime@npm:3.0.1"
+  checksum: b0c47beede81d37cfcb9065578e91af51637a89ff757c53924ff261b1e80f4a06d7667e0bcd381fa823394a9e5e8572c52c9336df9eaf1a84bfe196ea62e4460
   languageName: node
   linkType: hard
 
@@ -9686,19 +9695,19 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"pug@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "pug@npm:3.0.0"
+"pug@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "pug@npm:3.0.2"
   dependencies:
-    pug-code-gen: ^3.0.0
+    pug-code-gen: ^3.0.2
     pug-filters: ^4.0.0
-    pug-lexer: ^5.0.0
+    pug-lexer: ^5.0.1
     pug-linker: ^4.0.0
     pug-load: ^3.0.0
     pug-parser: ^6.0.0
-    pug-runtime: ^3.0.0
+    pug-runtime: ^3.0.1
     pug-strip-comments: ^2.0.0
-  checksum: bc45c78181f32ff0651347de008ce667b62f5106a94c2f7ddc009b29cd60fac9d9f2b1e09025ba8106f094ef984a45aada94e2c82efc1788a15a9746a7b2b0b1
+  checksum: ba2cfc68c4fef649da2344d73d326ad289158a39a73293c98d50974f48e255f09063e3201c25ff9500c2af519b88e6c7456f638f51df99d2c95dd30b8527b3b5
   languageName: node
   linkType: hard
 
@@ -9848,18 +9857,6 @@ fsevents@~2.3.1:
     iconv-lite: 0.4.24
     unpipe: 1.0.0
   checksum: 46dc02f8b4f358786d41e18fb55533fbe4702d390e22bbe2b9c98c88dec41cab23ea2315f3ae0bf4bc0213a2872c89943d3df6857f4e21f996ea9d2d92f1bcaa
-  languageName: node
-  linkType: hard
-
-"raw-loader@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "raw-loader@npm:4.0.2"
-  dependencies:
-    loader-utils: ^2.0.0
-    schema-utils: ^3.0.0
-  peerDependencies:
-    webpack: ^4.0.0 || ^5.0.0
-  checksum: 1a08968df5bf185923102de589dc28da6c9953f87059c80de3cbfdfb47bc15907f23f5e21048f03af2842df01d0dde2630826697c783c4c9683ea71f04f4538d
   languageName: node
   linkType: hard
 
@@ -11922,17 +11919,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"vue-cli-plugin-pug@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "vue-cli-plugin-pug@npm:2.0.0"
-  dependencies:
-    pug: ^3.0.0
-    pug-plain-loader: ^1.0.0
-    raw-loader: ^4.0.2
-  checksum: 9b91b5e6fb04f895100cf6f09cb56ddceed0f1da86841c58e8bc4d17d67ba25f3b6979d8233a969d6082096dee416b79c4750be2621df0bdeeccbb5e3569ecb1
-  languageName: node
-  linkType: hard
-
 "vue-codemirror@npm:^4.0.6":
   version: 4.0.6
   resolution: "vue-codemirror@npm:4.0.6"
@@ -11999,10 +11985,11 @@ fsevents@~2.3.1:
     eslint-plugin-vue: ^7.6.0
     highlight.js: ^10.6.0
     prettier: ^2.2.1
+    pug: ^3.0.2
+    pug-plain-loader: ^1.1.0
     sass: ^1.32.8
     sass-loader: 10
     vue: ^2.6.12
-    vue-cli-plugin-pug: ^2.0.0
     vue-codemirror: ^4.0.6
     vue-gh-corners: ^3.0.1
     vue-github-buttons: ^3.1.0
