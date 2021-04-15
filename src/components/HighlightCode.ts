@@ -1,5 +1,5 @@
 import { StandardPropertiesHyphen } from 'csstype';
-import hljs from 'highlight.js/lib/highlight';
+import hljs from 'highlight.js/lib/core';
 import { CreateElement, VNode } from 'vue';
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
@@ -14,7 +14,7 @@ const inlineStyles: StandardPropertiesHyphen = {
 	name: 'HighlightCode'
 })
 export default class HighlightCode extends Vue {
-	@Prop(String) lang!: string;
+	@Prop(String) lang?: string;
 	@Prop({ type: Boolean, default: false }) inline!: boolean;
 	@Prop(String) code!: string;
 	@Prop(Boolean) auto!: boolean;

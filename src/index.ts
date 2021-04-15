@@ -1,10 +1,13 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import Vue, { PluginFunction, PluginObject } from 'vue';
 
 import HighlightCode from './components/HighlightCode';
 import { registerLanguages } from './lib';
-import { HLJSLang } from './types';
+import { LanguageFn } from './types';
 
-export { HLJSLang };
+import hljsVue from '../lib/languages/vue';
+
+export { LanguageFn };
 
 /**
  * Vue Highlight.js options.
@@ -16,10 +19,10 @@ export interface Options {
 	/**
 	 * Highlight.js languages
 	 *
-	 * @type {Record<string, HLJSLang>}
+	 * @type {Record<string, LanguageFn>}
 	 * @memberof Options
 	 */
-	languages?: Record<string, HLJSLang>;
+	languages?: Record<string, LanguageFn>;
 }
 
 /**
@@ -32,18 +35,23 @@ const install: PluginFunction<Options> = (
 	vue: typeof Vue,
 	options: Options = { languages: {} }
 ): void => {
+	// Prevent error in Vue 3
+	if (!vue.component) {
+		return;
+	}
+
 	const { languages } = options;
 
 	if (IS_WEB_BUNDLE) {
-		// Register additional `vue` language from highlight.js `xml` in web bundle
-		const xml = window.hljs.getLanguage('xml');
-
-		window.hljs.registerLanguage('vue', () => xml);
+		window.hljs.registerLanguage('vue', hljsVue);
 	} else {
 		// Register languages from options in non-web bundle
-		languages && registerLanguages(languages);
+		/*
+		 * `Record<string, LanguageFn>` is for fixing build error.
+		 */
+		registerLanguages(languages as Record<string, LanguageFn>);
 	}
-	vue.component('highlight-code', HighlightCode);
+	vue.component('HighlightCode', HighlightCode);
 };
 
 if (typeof window !== 'undefined' && window.Vue) {

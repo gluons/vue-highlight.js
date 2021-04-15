@@ -20,9 +20,6 @@ describe('HighlightCode component', () => {
 		}
 	});
 
-	it(`should named 'HighlightCode'`, () => {
-		expect(wrapper.name()).toEqual('HighlightCode');
-	});
 	it(`should have expected 'lang' property`, () => {
 		expect(typeof wrapper.props('lang')).toBe('string');
 		expect(wrapper.props('lang')).toEqual('javascript');

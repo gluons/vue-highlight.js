@@ -23,23 +23,19 @@
 [![npm](https://nodei.co/npm/vue-highlight.js.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/vue-highlight.js)
 
 ```bash
-npm install highlight.js vue-highlight.js
+npm install highlight.js vue-highlight.js@next
 ```
 
-**Or [Yarn](https://yarnpkg.com):**
+**Via [Yarn](https://yarnpkg.com):**
 
 ```bash
-yarn add highlight.js vue-highlight.js
+yarn add highlight.js vue-highlight.js@next
 ```
 
----
-
-**For [TypeScript](https://www.typescriptlang.org/), Please install [`@types/highlight.js`](https://www.npmjs.com/package/@types/highlight.js).**
+**Via [pnpm](https://pnpm.js.org):**
 
 ```bash
-npm install --save-dev @types/highlight.js
-# or
-yarn add --dev @types/highlight.js
+pnpm add highlight.js vue-highlight.js@next
 ```
 
 ## 🎬 Demo
@@ -145,15 +141,15 @@ There are 2 ways to import Highlight.js languages.
 ## ⛕ Plugin Options
 
 ### `languages`
-**Type:** `{ [name: string]: HLJSLang }`  
+**Type:** `{ [name: string]: LanguageFn }`  
 **Default:** `{}`
 
 Highlight.js languages.  
 Add the languages that you want to use here.
 
-`name` is the name of language to register with **Highlight.js**' [`registerLanguage(name, language)`](https://highlightjs.readthedocs.io/en/latest/api.html#registerlanguage-name-language) API.
+`name` is the name of language to register with **Highlight.js**' [`registerLanguage(languageName, languageDefinition)`](https://highlightjs.readthedocs.io/en/latest/api.html#registerlanguage-languagename-languagedefinition) API.
 
-_See https://github.com/isagalaev/highlight.js#commonjs about importing each language from **highlight.js**._
+_See https://github.com/isagalaev/highlight.js#nodejs about importing each language from **highlight.js**._
 
 ## 📚 API
 
@@ -168,7 +164,7 @@ Static code content.
 ##### lang
 **Type:** `String`
 
-Highlight.js [language](http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html#language-names-and-aliases).
+Highlight.js [language](https://github.com/isagalaev/highlight.js/blob/master/SUPPORTED_LANGUAGES.md).
 
 ##### inline
 **Type:** `Boolean`  
@@ -191,7 +187,7 @@ Code content in code block.
 
 Enable auto detecting code language.
 
-> Code will be detected by [highlight.js' `highlightAuto`](https://highlightjs.readthedocs.io/en/latest/api.html#highlightauto-value-languagesubset) function.
+> Code will be detected by [highlight.js' `highlightAuto`](https://highlightjs.readthedocs.io/en/latest/api.html#highlightauto-code-languagesubset) function.
 
 **`auto` will work well when you import all Highlight.js languages.**
 

@@ -1,0 +1,22 @@
+{
+	"root": true,
+	"extends": "gluons/vue-ts",
+	"env": {
+		"jest": true
+	},
+	"globals": {
+		"IS_WEB_BUNDLE": "readonly"
+	},
+	"parserOptions": {
+		"project": "./tsconfig-eslint.json"
+	},
+	"overrides": [
+		{
+			"files": "*.ts",
+			"extends": "gluons/ts",
+			"parserOptions": {
+				"project": "./tsconfig-eslint.json"
+			}
+		}
+	]
+}

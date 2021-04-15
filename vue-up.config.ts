@@ -8,16 +8,13 @@ const config: Configuration = {
 	externals: {
 		module: nodeExternals({
 			extra: [/^highlight\.js/],
-			whitelist: [
-				/vue-class-component/,
-				/vue-property-decorator/
-			]
+			whitelist: [/vue-class-component/, /vue-property-decorator/]
 		}),
-		web: ['highlight.js', 'highlight.js/lib/highlight']
+		web: ['highlight.js', 'highlight.js/lib/core']
 	},
 	globals: {
 		'highlight.js': 'hljs',
-		'highlight.js/lib/highlight': 'hljs'
+		'highlight.js/lib/core': 'hljs'
 	},
 	dev: {
 		entry: resolve(__dirname, './dev/main.ts'),

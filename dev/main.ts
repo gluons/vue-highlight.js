@@ -3,13 +3,19 @@
 import Vue from 'vue';
 import VueHighlightJS, { Options } from '../src';
 
-import '../lib/allLanguages';
+import javascript from 'highlight.js/lib/languages/javascript';
+import vue from '../lib/languages/vue';
 
 import App from './App.vue';
 
 import 'highlight.js/styles/agate.css';
 
-Vue.use<Options>(VueHighlightJS);
+Vue.use<Options>(VueHighlightJS, {
+	languages: {
+		javascript,
+		vue
+	}
+});
 
 new Vue({
 	el: '#app',

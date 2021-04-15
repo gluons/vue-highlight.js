@@ -1,15 +1,15 @@
-import hljs from 'highlight.js/lib/highlight';
+import hljs from 'highlight.js/lib/core';
 
-import { HLJSLang } from '../types';
+import { LanguageFn } from '../types';
 
 /**
  * Register Highlight.js languages.
  *
  * @export
- * @param {Record<string, HLJSLang>} languages Highlight.js languages
+ * @param {Record<string, LanguageFn>} languages Highlight.js languages
  */
 export default function registerLanguages(
-	languages: Record<string, HLJSLang>
+	languages: Record<string, LanguageFn>
 ): void {
 	if (typeof languages !== 'object') {
 		return;
